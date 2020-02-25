@@ -535,16 +535,16 @@ body {
 }
 
 .s2 > .fp-controlArrow.fp-prev:before{
-    content:"\e93d";
-    font-family: xeicon;
+    content:"\e93d" !important;
+    font-family: xeicon !important;
     font-size:20px;
     line-height:40px;
     font-weight: 900;
     color:#333;
 }
 .s2 > .fp-controlArrow.fp-next:before{
-    content:"\e940";
-    font-family: xeicon;
+    content:"\e940" !important;
+    font-family: xeicon !important;
     font-size:20px;
     font-weight: 900;
     line-height:40px;
