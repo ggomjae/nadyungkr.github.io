@@ -63,7 +63,7 @@ body {
 
 #gnb li:hover{
     background:rgba(255,255,255,.1);
-    transition: 1s;
+    transition: .3s;
 }
 
 #gnb li:last-child:hover{
@@ -146,29 +146,21 @@ body {
 .lol{
     background: url(../images/lol1.jpg)40% 0% no-repeat;
     background-size:cover;
-	width: 25%;
-    height: 100%;
 }
 
 .mnh{
-    background: url(../images/mnh1.jpg)40% 10% no-repeat;
+    background: url(../images/mnh1.jpg)40% 50% no-repeat;
     background-size:cover;
-    width:25%;
-    height:100%;
 }
 
 .dat{
     background: url(../images/dat5.jpg)50% 50% no-repeat;
     background-size: cover;
-    width:25%;
-    height:100%;
 }
 
 .phj{
     background: url(../images/phj2.jpg)50% 50% no-repeat;
     background-size: cover;
-    width:25%;
-    height:100%;
 }
 
 .slidecontent h2{
