@@ -369,6 +369,16 @@ footer{
     position: fixed;
     bottom: 0;
     right: 0;
+    width:100%;
+    height:40px;
+    text-align:right;
+}
+
+footer a{
+    color:#222;
+    position:absolute;
+    bottom:50%;
+    right:30px;
 }
 
 @media screen and (max-width: 600px) {
