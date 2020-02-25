@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="박현정" author="박현정의 포트폴리오"/>
+    <title>박현정의 포트폴리오</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/reset.css"/>  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"/>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#main">본문 바로가기</a>
+    </div>
+    <header id="header">
+        <h1><em>PARK</em>HYEONJEONG</h1>
+        <div id="menu" onclick="openNav()">&#9776; <span class="blind">메뉴 열기</span></div>
+    </header>
+    <main id="main">
+    <div id="nav">
+            <ul id="gnb">
+                <li><a href="#section1" onclick="closeNav()">HOME</a></li>
+                <li><a href="#section2" onclick="closeNav()">PROJECT</a></li>
+                <li><a href="#section3" onclick="closeNav()">PROFILE</a></li>
+                <li class="closebtn" onclick="closeNav()">&times;<span class="blind">메뉴 닫기</span></li>
+            </ul>
+    </div>
+    <div id="fullpage">
+        <div class="section s1">
+            <div class="home_bg"></div>
+            <div class="home_container">
+                <h2 class="home_h2">Hello I'm<br/>
+                <span id="autoType"></span></h2>
+                <p class="home_txt">안녕하세요. 퍼블/프론트 신입 박현정입니다.<br/>
+                    'Creative' 제가 제일 좋아하는 단어에요.<br/>
+                    디자인과 개발은 너무 멋있고 매력적인 직업이라 생각해요.
+                </p>
+            </div>
+        </div>
+        <div class="section s2">
+            <div class="slide lol" data-anchor="slide1">
+                <div class="slidewrap">
+                    <div class="slidecontent">
+                        <h2>LEAGUE OF<br/>LEGENDS</h2>
+                        <p>100% 웹퍼블리싱 적응형 홈페이지</p>
+                        <p>YouTube SVG를 이용한 마우스 hover 효과</p>
+                        <ul>
+                            <li><a href="https://github.com/nadyungkr/CloneCoding-LeagueOfLegends" target="_blank">CODE VIEW</a></li>
+                            <li><a href="#" target="_blank">IMAGE VIEW</a></li>
+                        </ul>
+                        <p class="webpage"><a href="#" target="_blank">WEB PAGE</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide mnh" data-anchor="slide2">
+                <div class="slidewrap">
+                    <div class="slidecontent">
+                        <h2>MNH<br/>ENTERTAINMENT</h2>
+                        <p>100% 웹퍼블리싱 적응형 홈페이지</p>
+                        <p>JS의 scrollTop 기능을 이용한 sticky header</p>
+                        <ul>
+                            <li><a href="https://github.com/nadyungkr/CloneCoding-MNHEnter" target="_blank">CODE VIEW</a></li>
+                            <li><a href="#" target="_blank">IMAGE VIEW</a></li>
+                        </ul>
+                        <p class="webpage"><a href="#" target="_blank">WEB PAGE</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide dat" data-anchor="slide3">
+                <div class="slidewrap">
+                    <div class="slidecontent">
+                        <h2>DA<br/>TECHNOLOGY</h2>
+                        <p>100% 웹퍼블리싱 적응형 홈페이지</p>
+                        <p>순수 CSS로 메뉴에 Dropdown, hover 효과</p>
+                        <ul>
+                            <li><a href="https://github.com/nadyungkr/CloneCoding-DATech" target="_blank">CODE VIEW</a></li>
+                            <li><a href="#" target="_blank">IMAGE VIEW</a></li>
+                        </ul>
+                        <p class="webpage"><a href="#" target="_blank">WEB PAGE</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide phj" data-anchor="slide4">
+                <div class="slidewrap">
+                    <div class="slidecontent">
+                        <h2>PHJ<br/>PORTPOLIO</h2>
+                        <p>100% 웹퍼블리싱 반응형 홈페이지</p>
+                        <p>마우스 커서 깜빡임 효과, 스크립트로 타이핑 구현</p>
+                        <ul>     
+                            <li><a href="https://github.com/nadyungkr/portpolio-project" target="_blank">CODE VIEW</a></li>
+                            <li><a href="#" target="_blank">IMAGE VIEW</a></li>
+                        </ul>
+                        <p class="webpage"><a href="#" target="_blank">WEB PAGE</a></p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="section s3">
+            <ul>
+                <li class="PARK">PARKHYEONJEONG</li>
+                <li class="AGE">1996.08.06</li>
+                <li class="MAIL">DYUNGKR@NAVER.COM</li>
+                <li class="PUBLISHER">WEB PUBLISHER</li>
+                <li class="FRONT">FRONT DEVELOPER</li>
+                <li class="NEWCOMER">NEWCOMER</li>
+            </ul>
+        </div>
+    </div>
+    </main>
+    <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.js" integrity="sha256-wypDCQw+qwWtdARZAAtUMv/1SWOEB1XHZwAFoNc9Wn8=" crossorigin="anonymous"></script>
+    <script>
+        new fullpage('#fullpage',{
+            autoScrolling: true,
+            navigation: true,
+            anchors: ['section1','section2','section3'],
+            navigationTooltips: ['HOME', 'PROJECT', 'PROFILE'],
+            showActiveTooltips: true,
+            scrollingSpeed: 1000,
+            controlArrows: true,
+            slidesNavigation: true,
+            sectionsColor: ['#444', '#222', '#333'],
+            css3:true
+        })
+    </script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
