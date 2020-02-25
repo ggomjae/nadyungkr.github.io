@@ -1,12 +1,13 @@
 //메뉴 열고 닫기
 function openNav() {
-    document.getElementById("nav").style.width = "280px";
     document.getElementById("fullpage").style.marginLeft = "280px";
+    document.getElementById("nav").style.width = "280px";
 }
   
 function closeNav() {
-    document.getElementById("nav").style.width = "0";
     document.getElementById("fullpage").style.marginLeft = "0";
+    document.getElementById("nav").style.width = "0";
+
 }
 
 //autoType

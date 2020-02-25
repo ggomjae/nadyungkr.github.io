@@ -3,10 +3,6 @@ body {
     font-size:13px;
 }
 
-#fullpage{
-    transition: margin-left .5s;
-}
-
 /*헤더시작*/
 #header{
     position:fixed;
@@ -33,16 +29,17 @@ body {
     position: absolute;
     top:50%;
     transform:translateY(-50%);
-    left:1%;
+    left:2%;
     z-index: 11;
     color:#000;
     text-align:center;
-    line-height: 50px;
-    font-size:40px;
     cursor: pointer;
-    width:50px;
-    height:50px;
 }
+
+#menu i{
+    font-size:40px;
+}
+
 /*햄버거 끝*/
 /*header 끝*/
 
@@ -66,7 +63,7 @@ body {
 
 #gnb li:hover{
     background:rgba(255,255,255,.1);
-    transition: .5s;
+    transition: 1s;
 }
 
 #gnb li:last-child:hover{
@@ -76,12 +73,12 @@ body {
 #gnb li:last-child{
     cursor: pointer;
     position: absolute;
-    top: -20px;
+    top: 0;
     right: 0;
-    font-size: 60px;
     display:inline-block;
     padding:25px;
     text-indent:0;
+    font-size:30px;
 }
 
 #gnb li:first-child{
@@ -362,6 +359,12 @@ body {
 
 /*profile 끝*/
 
+footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
 @media screen and (max-width: 600px) {
     #header h1{
         font-size:26px;
@@ -519,7 +522,7 @@ body {
     width:40px;
     height:40px;
     border-radius:50%;
-    border:2px solid #333;
+    border:2px solid #000;
     text-align:center;
     margin-top:700px;
     z-index:10;
@@ -529,22 +532,25 @@ body {
     top:0;
     left:100px;
 }
+
 .s2 > .fp-controlArrow.fp-next{
     top:0;
     left:160px;
 }
 
+@import url("path/to/xeicon/xeicon.min.css");
 .s2 > .fp-controlArrow.fp-prev:before{
-    content:"\e93d" !important;
-    font-family: xeicon !important;
+    content:"\e93d";
+    font-family: xeicon;
     font-size:20px;
     line-height:40px;
     font-weight: 900;
     color:#333;
 }
+
 .s2 > .fp-controlArrow.fp-next:before{
-    content:"\e940" !important;
-    font-family: xeicon !important;
+    content:"\e940";
+    font-family: xeicon;
     font-size:20px;
     font-weight: 900;
     line-height:40px;
