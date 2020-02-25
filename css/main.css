@@ -222,6 +222,12 @@ body {
     margin:0 0 200px 2px;
 
 }
+
+.slidecontent .webpage a{
+    display: inline-block;
+    width:100%;
+    height:100%;
+}
 /*슬라이드 끝*/
 
 /*profile 시작*/
