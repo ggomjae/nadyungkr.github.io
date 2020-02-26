@@ -394,7 +394,6 @@ body {
         width:320px;
         min-width: 260px;
         height:auto;
-        outline:1px solid red;
         word-break: keep-all;
     }
 
@@ -407,7 +406,7 @@ body {
     }
 
     .slidecontent{
-        padding:50px 0 100px 15px;
+        padding:10px 0 100px 15px;
         font-size:16px;
     }
 
@@ -466,7 +465,7 @@ body {
     }
 
     .s2 > .fp-controlArrow.fp-prev,.s2 > .fp-controlArrow.fp-next{
-        margin-top:650px !important;
+        margin-top:680px !important;
     }
 
     .s2 > .fp-controlArrow.fp-prev{
