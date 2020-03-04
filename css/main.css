@@ -158,6 +158,11 @@ body {
     background-size: cover;
 }
 
+.cello{
+    background: url(../images/cello1.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+
 .phj{
     background: url(../images/phj2.jpg)50% 50% no-repeat;
     background-size: cover;
