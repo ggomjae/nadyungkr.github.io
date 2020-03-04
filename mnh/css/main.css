@@ -3,6 +3,7 @@
 				src:url("../font/NanumGothic-Regular.ttf");}
 @font-face{font-family:"NanumGothicEB";
 				src:url("../font/NanumGothic-ExtraBold.ttf");}
+@import url("path/to/xeicon/xeicon.min.css");
 
 body{font-family:"NanumGothic",sans-serif; font-size:14px; background:#fff; overflow:auto; min-width:1140px;}
 a{text-decoration:none;}
@@ -102,5 +103,5 @@ footer .footer_sns li{display:inline-block; width:37.5px; height:37.5px; margin:
 					  text-align: center; font-size: 1em; line-height: 2;}
 footer .footer_sns li a{display:block; width:37.5px; height:37.5px; border:1px solid #a2a2a2;
 						border-radius:50px; color:#a2a2a2;}
-footer .footer_sns li i{margin-top:12px;}
+footer .footer_sns li i{margin-top:12px; font-size:14px;}
 footer .footer_sns li:hover a{color:#fff; border-color:#fff;}
