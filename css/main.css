@@ -448,7 +448,7 @@ body {
         position:absolute;
         right:12px;
         bottom:4px;
-
+        opacity: 1;
     }
 
     .s3{
@@ -477,7 +477,8 @@ body {
     }
 
     #footer{
-        display:none;
+        display:none !important;
+        opacity:0;
     }
 
     #fp-nav.fp-right{
@@ -486,11 +487,11 @@ body {
     }
 
     .s2 > .fp-controlArrow.fp-prev{
-        display:none !important;
-
+        display: none !important;
     }
+    
     .s2 > .fp-controlArrow.fp-next{
-        display:none !important;
+        display: none !important;
     }
 }
 
