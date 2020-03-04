@@ -471,13 +471,13 @@ body {
 
     .s2 > .fp-controlArrow.fp-prev{
             /*슬라이드 왼쪽 방향키*/
-        top:78% !important;
+        top:72% !important;
         left:40px !important;
     }
 
     .s2 > .fp-controlArrow.fp-next{
         /*슬라이드 오른쪽 방향키*/
-        top:78% !important;
+        top:72% !important;
         left:90px !important;
     }
 }
