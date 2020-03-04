@@ -132,7 +132,6 @@ body {
 /*home 끝*/
 /*슬라이드 시작*/
 .slidewrap{
-    position: relative;
     width:550px;
     height:700px;
     background:rgba(255,255,255,.7);
@@ -230,10 +229,6 @@ body {
 .slidecontent .arrowbottom{
     display: none;
     opacity: 0;
-    position:absolute;
-    right:10px;
-    bottom:2px;
-    font-size:26px;
 }
 /*슬라이드 끝*/
 
@@ -413,6 +408,7 @@ body {
     }
 
     .slidewrap{
+        position: relative;
         background:rgba(255,255,255,.8);
         width:90%;
         min-width: 342px;
@@ -449,6 +445,10 @@ body {
 
     .slidecontent .arrowbottom{
         display:block;
+        position:absolute;
+        right:12px;
+        bottom:4px;
+
     }
 
     .s3{
@@ -485,9 +485,12 @@ body {
         display: none !important;
     }
 
-    .s2 > .fp-controlArrow.fp-prev,.s2 > .fp-controlArrow.fp-next{
+    .s2 > .fp-controlArrow.fp-prev{
         display:none !important;
 
+    }
+    .s2 > .fp-controlArrow.fp-next{
+        display:none !important;
     }
 }
 
