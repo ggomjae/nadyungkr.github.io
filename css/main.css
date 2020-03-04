@@ -469,15 +469,19 @@ body {
         display: none !important;
     }
 
+    .s2 > .fp-controlArrow.fp-prev,.s2 > .fp-controlArrow.fp-next{
+        margin-top:50px;
+    }
+
     .s2 > .fp-controlArrow.fp-prev{
             /*슬라이드 왼쪽 방향키*/
-        top:72% !important;
+        top:60% !important;
         left:40px !important;
     }
 
     .s2 > .fp-controlArrow.fp-next{
         /*슬라이드 오른쪽 방향키*/
-        top:72% !important;
+        top:60% !important;
         left:90px !important;
     }
 }
@@ -538,15 +542,16 @@ body {
     border:2px solid #000;
     text-align:center;
     z-index:10;
+    margin-top:100px;
 }
 
 .s2 > .fp-controlArrow.fp-prev{
-    top:80%;
+    top:60%;
     left:100px;
 }
 
 .s2 > .fp-controlArrow.fp-next{
-    top:80%;
+    top:60%;
     left:160px;
 }
 
