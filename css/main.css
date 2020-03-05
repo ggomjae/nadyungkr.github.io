@@ -53,17 +53,13 @@ body {
     color:#fff;
     transition: 1s;
     overflow-x: hidden;
+    display: flex;
 }
 
 #gnb li{
     font-size:32px;
     padding:25px 0;
     text-indent:30px;
-}
-
-#gnb li:hover{
-    background:rgba(255,255,255,.1);
-    transition: .3s;
 }
 
 #gnb li:last-child:hover{
@@ -86,11 +82,29 @@ body {
 }
 
 #gnb li a{
+    text-transform: uppercase;
+    position: relative;
     color:#fff;
     display: block;
     width:100%;
     height:100%;
     transition: 0.3s;
+}
+
+#gnb li a:before{
+    content: '';
+    background-color: #fff;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 10%;
+    /*가운데에서 나오게 하려면 transform:translateY(-50%)*/
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+#gnb li a:hover:before{
+    width:100%;
 }
 /*gnb끝*/
 
