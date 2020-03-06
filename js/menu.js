@@ -1,12 +1,22 @@
 //메뉴 열고 닫기
+var navWidth = document.getElementById("nav").style;
+var mL = document.getElementById("fullpage").style;
+
 function openNav() {
-    document.getElementById("nav").style.width = "280px";
-    document.getElementById("fullpage").style.marginLeft = "280px";
+    navWidth.width = "280px";
+    mL.marginLeft = "280px";
 }
   
 function closeNav() {
-    document.getElementById("nav").style.width = "0";
-    document.getElementById("fullpage").style.marginLeft = "0";
+    navWidth.width = "0";
+    mL.marginLeft = "0";
+}
+
+var mobileQuery = window.matchMedia("screen and (max-width:600px)");
+    if (mobileQuery.matches){
+        console.log("모바일 화면입니다");
+    }  else {
+        console.log("pc화면입니다");
 }
 
 //autoType
@@ -47,3 +57,4 @@ function typing()
         }
     }
 }
+
