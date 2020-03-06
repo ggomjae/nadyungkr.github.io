@@ -1,10 +1,16 @@
 //메뉴 열고 닫기
 var navWidth = document.getElementById("nav").style;
 var mL = document.getElementById("fullpage").style;
+var mobileQuery = window.matchMedia("screen and (max-width:600px)");
 
 function openNav() {
-    navWidth.width = "280px";
-    mL.marginLeft = "280px";
+    if (mobileQuery.matches){
+        navWidth.width = "100%";
+        mL.marginLeft = "100%";
+    }  else {
+        navWidth.width = "280px";
+        mL.marginLeft = "280px";
+    }
 }
   
 function closeNav() {
@@ -12,12 +18,6 @@ function closeNav() {
     mL.marginLeft = "0";
 }
 
-var mobileQuery = window.matchMedia("screen and (max-width:600px)");
-    if (mobileQuery.matches){
-        console.log("모바일 화면입니다");
-    }  else {
-        console.log("pc화면입니다");
-}
 
 //autoType
 var headLine = new Array();
