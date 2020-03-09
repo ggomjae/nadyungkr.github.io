@@ -1,351 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--
-width=device-width: 페이지의 너비를 기기의 스크린 너비로 설정
-initial-scale=1.0 : 처음 로딩시 확대/축소가 되지 않은 원래 크기 0~10 
-initial-scale=1.0  -->    
-<meta name="format-detection" content="telephone=no"><!-- 자동전화걸기 금지-->
-<!--
-<link rel="stylesheet" media ="(min-width:1200px)" href="pc.css">   
-pc는 기본이므로 media 생략 가능하다.--> 
-<link rel="stylesheet" href="reset.min.css">
-<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-<link rel="stylesheet" href="pc.min.css">  
-<link rel="stylesheet" media ="(max-width:1239px)" href="tb.min.css">
-
-<!-- ie 6~8버전에서 미디어쿼리 해석가능하게 해주는 js-->
-<!--[if lte IE 8]>>
-<script src="script/respond.min.js"></script>
-<!-[endif]-->
-<title>Cello Logistics</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700,900&display=swap">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="pc.min.css">  
+    <link rel="stylesheet" media ="screen and (max-width:1239px)" href="tb.min.css">
+    <title>Cello Logistics</title>
 </head>
 <body>
-<div id="skipnav">
-<a href="#gnb">주메뉴바로가기</a>
-</div><!--//skipNavi-->
-<header>
-<div class="inner">
-<h1 class="logo"><a href="index.html"><img src="images/icon_logo.png" alt="cello"></a></h1>
-<p class="tb_allMenu tb">
-<a href="#">
-<img src="images/icon_gnb.png" alt="전체메뉴보기">
-
-</a>
-</p>
-<!--pc버전 -->
-
-<h2 class="blind">주메뉴</h2>
-<nav class="pc">
-  <ul class="gnb inner" id="gnb">
-      <li><a href="#">Cello BPO</a></li>
-      <li><a href="#">Cello Square</a></li>
-      <li><a href="#">Cello Plus</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Newletter</a></li>
-      <li><a href="#">Press Room</a></li>
-  </ul>
-</nav>
-</div><!--//inner-->
-<div class="topMenu pc">
-<div class="inner">
- <ul>
-     <li><a href="#">
-     Login</a></li>
-     <li><a href="#">Sign Up</a></li>
-     <li><a href="#">  Global Network</a></li>
-     <li class="lang_sel">
-         <a href="#" class="pc">Global/English
-         <img src="images/icon_arrow1.png" alt="언어선택"></a>
-
-         <div class="lang pc">
-            <a href="#">korea/한국어</a>
-            <a href="#">Global/English</a>
-         </div>
-     </li>
- </ul>
- <p><a href="#">Contact Us</a></p>
-</div> <!--//inner-->
-</div><!--//topmenu-->
-
-<!--전체메뉴 클릭시 나오는 메뉴-->      
-<div class="modal">
-
-<h1 class="tb_logo"><a href="index.html"><img src="images/img_logo2.png" alt="cello"></a></h1>
-<h2 class="blind">주메뉴</h2>
-<nav>
-  <ul class="gnb inner" >
-      <li><a href="#">Cello BPO 
-      <span>더보기</span>
-      </a>
-      </li>
-      <li><a href="#">Cello Square</a></li>
-      <li><a href="#">Cello Plus</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Newletter</a></li>
-      <li><a href="#">Press Room</a></li>
-  </ul>
-</nav>
-<div class="topMenu">
-
- <ul>
-     <li><a href="#">
-     <i class="xi-lock-o"></i> Login</a></li>
-     <li><a href="#"><i class="xi-link "></i> Sign Up</a></li>
-     <li><a href="#"><i class="xi-maker "></i>  Global Network</a></li>
-     <li class="lang_sel">
-         <a href="#">
-         <i class="xi-globus"></i>
-         Kor/Eng
-         </a>
-    </li>
- </ul>
- <p><a href="#"><i class="xi-headset "></i> Contact Us</a></p>
-
-</div><!--//topmenu-->
-
-<p class="tb_close_btn">
-<!--<i class="xi-close"></i>-->
-<span>닫기</span></p>
-</div><!--//modal-->
-</header>  
-<main>
-<div class="main_visual"><!--화면100%-->
-<ul class="visual_container"><!--container 배너 움직이는 -->
-<li class="fb">
-<div class="txt inner">
-<h2>Cello BPO</h2>
-<p>We offer competitive logistics BPO services based on our extensive global network and the large quantities of cargo we handle.</p>
-
- <a href="#" title="cello BPO 보기"><span class="blind">cello bpo</span>Read More</a>
-<!-- title or span 넣어서 접근성 올려준다.-->          
-       </div>
-
-   </li>
-   <li class="sb">
-       <div class="txt inner">
-           <h2>Cello Square</h2>
-           <p>We offer a comprehensive range of logistics services on our intelligent logistics platform, Celo Square.</p>
-          <a href="#" title="cello square 보기" >Read More</a>
-       </div>
-
-   </li>
-   <li class="thb">
-       <div class="txt inner">
-           <h2>Cello Plus</h2>
-           <p>Cello Plus, a logistics platform built with advanced technologies, offers innovative logistics services.</p>
-           <a href="#" title="cello plus 보기" >Read More</a>
-       </div>
-   </li>
-</ul>
-<ul class="pager inner">
-   <li class="num active"><a href="#"><span class="blind">1번이미지</span></a></li>
-   <li class="num"><a href="#"><span class="blind">2번이미지</span></a></li>
-   <li class="num"><a href="#"><span class="blind">3번이미지</span></a></li>
-   <li class="pau"><a href="#"><span class="blind">정지</span></a></li>
-   <li class="play"><a href="#"><span class="blind">재생</span></a></li>
-</ul>
-<ul class="arr_btn">
-   <li class="prev"><a href="#">이전이미지</a></li>
-   <li class="next"><a href="#">다음이미지</a></li>
-</ul>
-</div><!--//main_visual-->
-<!--Industries-->
-<section class="inner con1 con">
-<h2 class="con_hd">Industries</h2>
-<p class="con_pg">Explore our logistics services by industry – they are custom built to meet your industry needs.</p>
-<div class="content1"><!--화면-->
-    <ul><!--container-->
-        <li>
-            <a href="#"><img src="images/img_mService1.jpg" alt="Electronics & Technology">
-            <span>Electronics &amp;Technology</span></a>
-            
-        </li>
-        <li>
-            <a href="#"><img src="images/img_mService2.jpg" alt="Textile & Garment">
-            <span>Textile &amp;Garment</span></a>
-        </li>
-        <li><a href="#"><img src="images/img_mService3.jpg" alt="Automotive">
-           <span>Automotive</span></a>
-        </li>  
-        <li>
-          <a href="#"><img src="images/img_mService4.jpg" alt="Retail&CPG">
-            <span>Retail&amp;CPG</span></a>
-            </li>
-        <li>
-            <a href="#"><img src="images/img_mService5.jpg" alt="Energy">
-            <span>Energy</span></a>
-        </li>
-           <li>
-            <a href="#"><img src="images/img_mService6.jpg" alt="Engineering&Construction">
-            <span>Engineering &amp;Construction</span></a>
-        </li>
-        
-    </ul>
-    <ul class="pager2 tb">
-        <li class="num active"><a href="#"><span class="blind">1</span></a></li>
-        <li class="num"><a href="#"><span class="blind">2</span></a></li>
-        <li class="num"><a href="#">
-        <span class="blind">3</span></a></li>
-    </ul>
-</div>
-</section>
-<div class="con2 con"><!--회색배경-->
-<section class="inner">
-    <h2 class="con_hd">Offerings</h2>
-    <p class="con_pg">With Cello Plus developed by Industry 4.0 technologies, we deliver logistics services throughout the supply chain.</p>
-    <ul>
-        <li><a href="#">Supply Chain<br/> Planning</a></li>
-        <li><a href="#">Freight<br/> Forwarding</a></li>
-        <li><a href="#">Contract<br/> Logistics</a></li>
-        <li><a href="#">e-Commerce<br/> Logistics</a></li>
-        <li><a href="#">Premium<br/> Logistics</a></li>
-        <li><a href="#">Specialized<br/> Services</a></li>
-    </ul>
-</section>
-</div><!--//회색배경-->
-<div class="inner con con3">
-    <h2 class="con_hd">Insights</h2>
-    <p class="con_pg">Get new insights from in-depth white papers and the latest logistics market trends.</p>
-    <ul class="contents1">
-        <li class="visual1 visual">
-            <a href="#">
-                <figure>
-                    <img src="images/Homepage.jpg" alt="white paper">
-                    <figcaption>&#91;2019 i4L White Paper No.20&#93; A Changing Trucking Market &amp; Digital</figcaption>
-                </figure>
-                <span class="c888s14">Nov 21 2019</span>
-            </a>
-        </li>
-        <li>
-           <ul class="all">
-               <li><a href="#">White Papers<span>더보기</span></a></li>
-               <li><a href="#">Newsletter Subscription<span>더보기</span></a></li>
-               <li><a href="#">Market Trends<span>더보기</span></a></li>
-           </ul>
-        </li>
-        <li class="visual2 visual">
-             <a href="#">
-                <figure>
-                    <img src="images/Newsletter.jpg" alt="Market Trend">
-                    <figcaption>2019 e4L Newsletter No.21</figcaption>
-                </figure>
-                <span class="c888s14">Nov 14 2019</span>
-            </a>
-        </li>
-    </ul>
-    <ul class="pager3 tb">
-        <li class="num active"><a href="#"><span class="blind">1</span></a></li>
-        <li class="num"><a href="#"><span class="blind">2</span></a></li>
-        <li class="num"><a href="#">
-        <span class="blind">3</span></a></li>
-    </ul>
-</div><!--con3-->
-<!--sns-->
-<div class="con con4"><!--100% 고정이미지-->
-   <section class="inner">
-    <h2 class="con_hd">Connect with Us</h2>
-    <p class="con_pg">Connect with us on social media and check all the latest Cello content and videos.</p>
-    <ul class="alignc">
-        <li><a href="#"><img src="images/icon_connect1.png" alt="유튜브"></a></li>
-        <li><a href="#"><img src="images/icon_connect2.png" alt="인스타"></a></li>
-        <li><a href="#"><img src="images/icon_connect3.png"alt="페이스북"></a></li>
-        <li><a href="#"><img src="images/icon_connect4.png" alt="워드프레스"></a></li>
-    </ul>
-    </section>
-    </div><!--//sns con4-->
-    <!--news & event con5-->
-    <div class="inner con con5">
-    <h2 class="con_hd">News &amp; Events</h2>
-    <p class="con_pg">Stay informed about the latest Cello news and events.</p>
-    <ul class="alignc">
-        <li>
-            <h3>Event</h3><!--16px-->
-            <p><a href="#">TransLogistica Poland (November 5~7, 2019)</a></p><!--20px-->
-            <p>Nov 22 2019</p><!--14px-->
-        </li>
-        <li>
-            <h3>Event</h3>
-            <p><a href="#">Logistica 2019(November 5~7, 2019)</a></p>
-            <p>Nov 21 2019</p>
-        </li>
-        <li>
-            <h3>Event</h3>
-            <p><a href="#">2019 Expoalimentaria (September 25~27, 2019)</a></p>
-            <p>Oct 11 2019</p>
-        </li>
-    </ul>
-    </div><!--//con5-->
-    <!--con6 Global Networks -->
-    <div class="con con6">
-    <div class="inner">
-    <h2 class="con_hd">Global Networks</h2>
-    <p class="con_pg">Meet our logistics experts around the world.</p>
-    <ul class="alignc">
-       <li><a href="#">
-           <span class="c6">Countries</span>
-           <span class="c6Text">38</span>
-       </a></li>
-       <li><a href="#">
-           <span class="c6">Branches</span>
-           <span class="c6Text">61</span>
-       </a></li>
-       <li><a href="#">
-           <span class="c6">Sites</span>
-           <span class="c6Text">227</span>
-       </a></li>
-       <li class="w50"><a href="#">
-           <span class="c6">Employees</span>
-           <span class="c6Text">4,584</span>
-       </a></li>
-       <li class="w50"><a href="#">
-           <span class="c6">Partners</span>
-           <span class="c6Text">2,209</span>
-       </a></li>
-        </ul>
+    <div id="skipnav">
+        <a href="#gnb">주메뉴바로가기</a>
+    </div>
+    <header>
+        <h1 class="logo"><a href="#"><img src="images/icon_logo.png" alt="cello"></a></h1>
+        <p class="tb_allMenu tb"><span class="blind">전체메뉴 보기</span></p>
+        <!--pc버전 -->
+        <h2 class="blind">주메뉴</h2>
+        <nav class="pc inner" id="gnb">
+            <ul class="gnb">
+                <li><a href="#">Cello BPO</a>
+                    <ul class="pc">
+                        <li>Overview
+                            <ul>
+                                <li>Service Overview</li>
+                                <li>Global Network</li>
+                                <li>Global Control Center</li>
+                            </ul>
+                        </li>
+                        <li>Industries</li>
+                        <li>Services</li>
+                        <li>Specialized Services</li>
+                    </ul>
+                </li>
+                <li><a href="#">Cello Square</a>
+                    <ul class="pc">
+                        <li>Overview
+                            <ul>
+                                <li>Service Overview</li>
+                                <li>Value Proposition</li>
+                            </ul>
+                        </li>
+                        <li>Offerings
+                            <ul>
+                                <li>Features</li>
+                                <li>References</li>
+                            </ul>
+                        </li>
+                        <li>Shipping</li>
+                    </ul>
+                </li>
+                <li><a href="#">Cello Plus</a>
+                    <ul class="pc">
+                        <li>Overview
+                            <ul>
+                                <li>Service Overview</li>
+                            </ul>
+                        </li>
+                        <li>Offerings
+                            <ul>
+                                <li>Supply Chain Planning</li>
+                                <li>Freight Forwarding</li>
+                                <li>Contract Logistics</li>
+                                <li>e-Commerce Logistics</li>
+                                <li>Premium Logistics</li>
+                            </ul>
+                        </li>
+                        <li>Specialized Services</li>
+                    </ul>
+                </li>
+                <li><a href="#">About Us</a>
+                    <ul class="pc">
+                        <li>Our Story</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </li>
+                <li><a href="#">Newletter</a>
+                    <ul class="pc">
+                        <li>e4L Newsletter</li>
+                        <li>i4L White Paper</li>
+                    </ul>
+                </li>
+                <li><a href="#">Press Room</a>
+                    <ul class="pc">
+                        <li>News</li>
+                        <li>Events</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="dim"></div>
+        <div class="topMenu pc">
+            <div class="inner">
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">  Global Network</a></li>
+                    <li class="lang_sel"> 
+                        <a href="#" class="pc">Global/English <img src="images/icon_arrow1.png" alt="언어선택"></a>
+                        <div class="lang pc">
+                            <a href="#">korea/한국어</a>
+                            <a href="#">Global/English</a>
+                        </div>
+                    </li>
+                </ul>
+                <p class="contact14"><a href="#">Contact Us</a></p>
+            </div> <!--inner-->
+        </div><!--//topmenu-->
+        <!--전체메뉴 클릭시 나오는 메뉴-->      
+        <div class="modal">
+            <h1 class="tb_logo"><a href="#"><img src="images/img_logo2.png" alt="cello"></a></h1>
+            <h2 class="blind">주메뉴</h2>
+            <nav id="gnb">
+                <ul class="inner">
+                    <li><a href="#">Cello BPO <span>더보기</span></a></li>
+                    <li><a href="#">Cello Square</a></li>
+                    <li><a href="#">Cello Plus</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Newletter</a></li>
+                    <li><a href="#">Press Room</a></li>
+                </ul>
+            </nav>
+            <div class="topMenu">
+                <ul>
+                    <li><a href="#">
+                    <i class="xi-lock-o"></i> Login</a></li>
+                    <li><a href="#"><i class="xi-link"></i> Sign Up</a></li>
+                    <li><a href="#"><i class="xi-maker"></i>  Global Network</a></li>
+                    <li class="lang_sel"><a href="#"><i class="xi-globus"></i>Kor/Eng</a></li>
+                </ul>
+                <p><a href="#"><i class="xi-headset"></i> Contact Us</a></p>
+            </div><!--//topmenu-->
+            <p class="tb_close_btn"><span>닫기</span></p>
+        </div><!--//modal-->
+    </header>  
+    <main>
+        <div class="main_visual">
+            <ul class="visual_container">
+                <li class="fb pc">
+                    <div class="txt inner">
+                        <h2>Cello BPO</h2>
+                            <p>We offer competitive logistics BPO services based on our extensive global network<br/>and the large quantities of cargo we handle.</p>
+                            <a href="#" title="cello BPO">Read More</a>       
+                    </div>
+                </li>
+                <li class="sb pc">
+                    <div class="txt inner">
+                        <h2>Cello Square</h2>
+                        <p>We offer a comprehensive range of logistics services<br/>on our intelligent logistics platform, Celo Square.</p>
+                        <a href="#" title="cello square">Read More</a>
+                    </div>
+                </li>
+                <li class="thb pc">
+                    <div class="txt inner">
+                        <h2>Cello Plus</h2>
+                        <p>Cello Plus, a logistics platform built with advanced<br/>technologies, offers innovative logistics services.</p>
+                        <a href="#" title="cello plus">Read More</a>
+                    </div>
+                </li>
+                <li class="fb tb">
+                    <div class="txt inner">
+                        <h2>Cello BPO</h2>
+                            <p>We offer competitive logistics BPO services based on<br/>our extensive global network and the large<br/>quantities of cargo we handle.</p>
+                            <a href="#" title="cello BPO">Read More</a>       
+                    </div>
+                </li>
+                <li class="sb tb">
+                    <div class="txt inner">
+                        <h2>Cello Square</h2>
+                        <p>We offer a comprehensive range of logistics<br/> services on our intelligent logistics platform,<br/>Celo Square.</p>
+                        <a href="#" title="cello square">Read More</a>
+                    </div>
+                </li>
+                <li class="thb tb">
+                    <div class="txt inner">
+                        <h2>Cello Plus</h2>
+                        <p>Cello Plus, a logistics platform built with<br/> advanced technologies, offers innovative<br/>logistics services.</p>
+                        <a href="#" title="cello plus">Read More</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pager inner">
+                <li class="num active"><a href="#"><span class="blind">1번이미지</span></a></li>
+                <li class="num"><a href="#"><span class="blind">2번이미지</span></a></li>
+                <li class="num"><a href="#"><span class="blind">3번이미지</span></a></li>
+                <li class="pau"><a href="#"><span class="blind">정지</span></a></li>
+                <li class="play"><a href="#"><span class="blind">재생</span></a></li>
+            </ul>
+            <ul class="arr_btn">
+                <li class="prev"><a href="#">이전이미지</a></li>
+                <li class="next"><a href="#">다음이미지</a></li>
+            </ul>
+        </div><!--//main_visual-->
+        <!--Industries-->
+        <section class="inner con1 con">
+            <h2 class="con_hd">Industries</h2>
+            <p class="con_pg">Explore our logistics services by industry – they are custom built to meet your industry needs.</p>
+            <div class="content1">
+                <ul><!--container-->
+                    <li><a href="#"><img src="images/img_mService1.jpg" alt="Electronics & Technology"><span>Electronics <br/>&amp; Technology</span></a></li>
+                    <li><a href="#"><img src="images/img_mService2.jpg" alt="Textile & Garment"><span>Textile <br/>&amp; Garment</span></a></li>
+                    <li><a href="#"><img src="images/img_mService3.jpg" alt="Automotive"><span>Automotive</span></a></li>  
+                    <li><a href="#"><img src="images/img_mService4.jpg" alt="Retail&CPG"><span>Retail &amp; CPG</span></a></li>
+                    <li><a href="#"><img src="images/img_mService5.jpg" alt="Energy"><span>Energy</span></a></li>
+                    <li><a href="#"><img src="images/img_mService6.jpg" alt="Engineering&Construction"><span>Engineering <br/>&amp; Construction</span></a></li>
+                </ul>
+                <ul class="pager2 tb">
+                    <li class="num active"><a href="#"><span class="blind">1</span></a></li>
+                    <li class="num"><a href="#"><span class="blind">2</span></a></li>
+                    <li class="num"><a href="#"><span class="blind">3</span></a></li>
+                </ul>
+            </div><!--content1-->
+        </section>
+        <div class="con2 con"><!--회색배경-->
+            <section class="inner">
+                <h2 class="con_hd">Offerings</h2>
+                <p class="con_pg">With Cello Plus developed by Industry 4.0 technologies, we deliver logistics services throughout the supply chain.</p>
+                <ul>
+                    <li><a href="#">Supply Chain<br/> Planning</a></li>
+                    <li><a href="#">Freight<br/> Forwarding</a></li>
+                    <li><a href="#">Contract<br/> Logistics</a></li>
+                    <li><a href="#">e-Commerce<br/> Logistics</a></li>
+                    <li><a href="#">Premium<br/> Logistics</a></li>
+                    <li><a href="#">Specialized<br/> Services</a></li>
+                </ul>
+            </section>
+        </div><!--//회색배경-->
+        <div class="inner con con3">
+            <h2 class="con_hd">Insights</h2>
+            <p class="con_pg">Get new insights from in-depth white papers and the latest logistics market trends.</p>
+            <ul class="contents1">
+                <li class="visual1 visual">
+                    <a href="#">
+                        <figure>
+                            <img src="images/Homepage.jpg" alt="white paper">
+                            <figcaption>&#91;2019 i4L White Paper No.20&#93; A Changing Trucking Market &amp; Digital</figcaption>
+                        </figure>
+                        <span class="c888s14">Nov 21 2019</span>
+                    </a>
+                </li>
+                <li>
+                    <ul class="all">
+                        <li><a href="#">White Papers<span>더보기</span></a></li>
+                        <li><a href="#">Newsletter Subscription<span>더보기</span></a></li>
+                        <li><a href="#">Market Trends<span>더보기</span></a></li>
+                    </ul>
+                </li>
+                <li class="visual2 visual">
+                    <a href="#">
+                        <figure>
+                            <img src="images/Newsletter.jpg" alt="Market Trend">
+                            <figcaption>2019 e4L Newsletter No.21</figcaption>
+                        </figure>
+                        <span class="c888s14">Nov 14 2019</span>
+                    </a>
+                </li>
+            </ul><!--contents1-->
+            <ul class="pager3 tb">
+                <li class="num active"><a href="#"><span class="blind">1</span></a></li>
+                <li class="num"><a href="#"><span class="blind">2</span></a></li>
+                <li class="num"><a href="#"><span class="blind">3</span></a></li>
+            </ul>
+        </div><!--con3-->
+        <div class="con con4"><!--sns-->
+            <section class="inner">
+                <h2 class="con_hd">Connect with Us</h2>
+                <p class="con_pg">Connect with us on social media and check all the latest Cello content and videos.</p>
+                <ul class="alignc">
+                    <li><a href="#"><img src="images/icon_connect1.png" alt="유튜브"></a></li>
+                    <li><a href="#"><img src="images/icon_connect2.png" alt="인스타"></a></li>
+                    <li><a href="#"><img src="images/icon_connect3.png" alt="페이스북"></a></li>
+                    <li><a href="#"><img src="images/icon_connect4.png" alt="워드프레스"></a></li>
+                </ul>
+            </section>
+        </div><!--sns con4-->
+        <div class="inner con con5"><!--news & event con5-->
+            <h2 class="con_hd">News &amp; Events</h2>
+            <p class="con_pg">Stay informed about the latest Cello news and events.</p>
+            <ul class="alignc">
+                <li>
+                    <h3>Event</h3><!--16px-->
+                    <p><a href="#">TransLogistica Poland (November 5~7, 2019)</a></p><!--20px-->
+                    <p>Nov 22 2019</p><!--14px-->
+                </li>
+                <li>
+                    <h3>Event</h3>
+                    <p><a href="#">Logistica 2019(November 5~7, 2019)</a></p>
+                    <p>Nov 21 2019</p>
+                </li>
+                <li>
+                    <h3>Event</h3>
+                    <p><a href="#">2019 Expoalimentaria (September 25~27, 2019)</a></p>
+                    <p>Oct 11 2019</p>
+                </li>
+            </ul>
+        </div><!--//con5-->
+        <div class="con con6"><!--con6 Global Networks -->
+            <div class="inner">
+                <h2 class="con_hd">Global Networks</h2>
+                <p class="con_pg pdsmall">Meet our logistics experts around the world.</p>
+                <ul class="alignc">
+                    <li>
+                        <a href="#">
+                            <span class="c6">Countries</span>
+                            <span class="c6Text">38</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="c6">Branches</span>
+                            <span class="c6Text">61</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="c6">Sites</span>
+                            <span class="c6Text">227</span>
+                        </a>
+                    </li>
+                    <li class="w50">
+                        <a href="#">
+                            <span class="c6">Employees</span>
+                            <span class="c6Text">4,584</span>
+                        </a>
+                    </li>
+                    <li class="w50">
+                        <a href="#">
+                            <span class="c6">Partners</span>
+                            <span class="c6Text">2,209</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div><!--con6-->
+        <div class="con con7"><!--contact us con7-->
+            <section class="inner">
+                <h2 class="con_hd con_hd_white">Contact Us</h2>
+                <p class="con_pg pdsmall">Have any questions or need further information about Cello?</p>
+                <p><a href="#" class="touch">Get in Touch</a></p>
+            </section>
+        </div><!--con7-->
+    </main>
+    <footer>
+        <div class="inner">
+            <ul class="link2">
+                <li class="pc"><a href="#">Contact Us</a></li>
+                <li><a href="#">Subscrible to Newsletter</a></li>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Open Source License</a></li> 
+            </ul>  
+            <ul class="sns6">
+                <li><a href="#"><img src="images/icon_connect1.png" alt="유튜브"></a></li>
+                <li><a href="#"><img src="images/icon_connect2.png" alt="인스타"></a></li>
+                <li><a href="#"><img src="images/icon_connect3.png"alt="페이스북"></a></li>
+                <li><a href="#"><img src="images/icon_connect4.png" alt="워드프레스"></a></li>
+            </ul>               
+            <div class="dropdown">
+                <a href="#">Family Site</a>
+                <a href="#" class="dropsub">Cello square 3.0</a>
+            </div>
+            <address class="pc address">
+                <p>Samsung SDS Logistics Business Unit</p>
+                <p>13530, Samsung SDS Pangyo Campus, Gyeonggi-do Bundang-gu, Seongnam-si</p>
+                <p><small>Copyright 2019 SAMSUNG SDS. All rights reserved. <img src="images/img_wa_mark.png" alt="wa"></small></p>
+            </address>
+            <address class="tb address">
+                <p>Samsung SDS Logistics Business Unit</p>
+                <p>13530, Samsung SDS Pangyo Campus,<br/>Gyeonggi-do Bundang-gu, Seongnam-si</p>
+                <p><small>Copyright 2019 SAMSUNG SDS. All rights reserved.</small></p>
+            </address>
         </div>
-    </div><!--//con6-->
-    <!--contact us con7-->
-    <div class="con con7"><!--고정이미지100%-->
-    <section class="inner">
-    <h2 class="con_hd">Contact Us</h2>
-    <p class="con_pg">Have any questions or need further information about Cello?</p>
-    <p><a href="#" class="touch">Get in Touch</a></p>
-    </section>
-    </div>
-</main>
-<footer>
-<div class="inner">
-<ul class="link2">
-    <li class="pc"><a href="#">Contact Us</a></li>
-    <li><a href="#">Subscrible to Newsletter</a></li>
-    <li><a href="#">Terms of use</a></li>
-    <li><a href="#">Privacy Policy</a></li>
-    <li><a href="#">Open Source License</a></li> 
-   </ul>  
-<ul class="sns6">
-    <li><a href="#"><img src="images/icon_connect1.png" alt="유튜브"></a></li>
-    <li><a href="#"><img src="images/icon_connect2.png" alt="인스타"></a></li>
-    <li><a href="#"><img src="images/icon_connect3.png"alt="페이스북"></a></li>
-    <li><a href="#"><img src="images/icon_connect4.png" alt="워드프레스"></a></li>
-</ul>               
-<div class="dropdown">
-<a href="#">Family Site</a>
-<a href="#" class="dropsub">Cello square 3.0</a>
-</div>
-         
-
-<address>
-    <p>Samsung SDS Logistics Business Unit</p>
-
-    <p>13530, Samsung SDS Pangyo Campus, Gyeonggi-do Bundang-gu, Seongnam-si</p>
-    <p><small>Copyright 2019 SAMSUNG SDS. All rights reserved. <img src="images/img_wa_mark.png" alt="wa"></small></p>
-    </address>
-    </div>
-</footer>
+    </footer>
 </body>
 </html>
 

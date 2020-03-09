@@ -15,7 +15,7 @@ ol,ul{list-style:none;}
 
 caption,th{text-align:left;}
 
-h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
 
 q:after,q:before{content:"";}
 
@@ -37,3 +37,5 @@ color: #fff;
 font-size: 120%; 
 width: 100%;
 text-align: center;  }
+
+a{text-decoration: none;}
