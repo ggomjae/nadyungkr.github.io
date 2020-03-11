@@ -60,15 +60,13 @@ header{
     position: absolute;
     top:0;
     left:0;
-    width:100%;
+    width:0;
     background:#fff;
-    display:block;
 }
 
 .tb_logo{
     height:3.125rem;
     background:#0f5431;
-    outline:1px solid red;
 }
 
 .tb_logo img{
@@ -77,6 +75,7 @@ header{
 }
 /*닫기*/
 .tb_close_btn{
+    cursor: pointer;
     position: absolute;
     top:0.875rem;
     right:1rem;

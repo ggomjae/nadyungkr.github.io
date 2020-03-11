@@ -214,8 +214,9 @@ nav:hover + div.dim/*,div.dim:hover*/{
     padding:0 1.4rem;
 }/*0 24px;*/
 
-.lang_sel{
+#lang{
     position: relative;
+    cursor: pointer;
 }
 
 .lang{/*display:none;*/
@@ -807,6 +808,7 @@ footer ul{
 }
 
 .dropdown{
+    cursor: pointer;
     position:absolute;
     top:35px;
     right:0;

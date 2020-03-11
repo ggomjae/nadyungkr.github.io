@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="reset.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700,900&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-    <link rel="stylesheet" href="pc.min.css">  
-    <link rel="stylesheet" media ="screen and (max-width:1239px)" href="tb.min.css">
+    <link rel="stylesheet" href="pc.css">  
+    <link rel="stylesheet" media ="screen and (max-width:1239px)" href="tb.css">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <title>Cello Logistics</title>
 </head>
@@ -17,7 +17,6 @@
     </div>
     <header>
         <h1 class="logo"><a href="#"><img src="images/icon_logo.png" alt="cello"></a></h1>
-        <p class="tb_allMenu tb"><span class="blind">Menu Read More</span></p>
         <!--pc버전 -->
         <h2 class="blind">Main menu</h2>
         <nav class="pc inner" id="gnb">
@@ -98,10 +97,9 @@
                 <ul>
                     <li><a href="#">Login</a></li>
                     <li><a href="#">Sign Up</a></li>
-                    <li><a href="#">  Global Network</a></li>
-                    <li class="lang_sel" onclick="dropTopDown()"> 
-                        <a href="#" class="pc">Global/English <img src="images/icon_arrow1.png" alt="언어선택"></a>
-                        <div class="lang pc" id="lang">
+                    <li><a href="#">Global Network</a></li>
+                    <li onclick="dropTopDown()" id="lang"><a href="#">Global/English <img src="images/icon_arrow1.png" alt="언어선택"></a>
+                        <div class="lang">
                             <a href="#">korea/한국어</a>
                             <a href="#">Global/English</a>
                         </div>
@@ -111,6 +109,7 @@
             </div> <!--inner-->
         </div><!--//topmenu-->
         <!--태블릿 전용-->      
+        <p class="tb_allMenu tb"><span class="blind">Menu Read More</span></p>
         <div class="modal">
             <h1 class="tb_logo"><a href="#"><img src="images/img_logo2.png" alt="cello"></a></h1>
             <h2 class="blind">Main menu</h2>
@@ -134,7 +133,7 @@
                 </ul>
                 <p><a href="#"><i class="xi-headset"></i> Contact Us</a></p>
             </div><!--//topmenu-->
-            <p class="tb_close_btn"><span>Close Menu Popup</span></p>
+            <p class="tb_close_btn"><span class="blind">Close Menu Popup</span></p>
         </div><!--//modal-->
     </header>  
     <main>

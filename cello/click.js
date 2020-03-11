@@ -8,10 +8,20 @@ function dropDown() {
 };
 
 function dropTopDown() {
-    var y = document.getElementById('lang');
-    if (y.style.height === '0px') {
-      y.style.height = '160%';
+    var lang = document.getElementById('lang');
+    var langCh = document.getElementById('lang').childNodes;
+    var langChT = langCh.item(2); 
+    if (langChT.style.height === '160%') {
+      langChT.style.height = '0px';
     } else {
-      y.style.height = '0px';
+      langChT.style.height = '160%';
     }
 };
+
+$(".tb_allMenu").click('on',function(){
+  $(this).next().css({"width":"100%","display":"block"});
+});
+
+$(".tb_close_btn").click('on',function(){
+  $(this).parent().css({"width":"0px","display":"none"});
+});
