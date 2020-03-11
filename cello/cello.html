@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700,900&display=swap">
-    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="pc.min.css">  
     <link rel="stylesheet" media ="screen and (max-width:1239px)" href="tb.min.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <title>Cello Logistics</title>
 </head>
 <body>
     <div id="skipnav">
-        <a href="#gnb">주메뉴바로가기</a>
+        <a href="#gnb">skip to main menu</a>
     </div>
     <header>
         <h1 class="logo"><a href="#"><img src="images/icon_logo.png" alt="cello"></a></h1>
-        <p class="tb_allMenu tb"><span class="blind">전체메뉴 보기</span></p>
+        <p class="tb_allMenu tb"><span class="blind">Menu Read More</span></p>
         <!--pc버전 -->
-        <h2 class="blind">주메뉴</h2>
+        <h2 class="blind">Main menu</h2>
         <nav class="pc inner" id="gnb">
             <ul class="gnb">
                 <li><a href="#">Cello BPO</a>
@@ -98,9 +99,9 @@
                     <li><a href="#">Login</a></li>
                     <li><a href="#">Sign Up</a></li>
                     <li><a href="#">  Global Network</a></li>
-                    <li class="lang_sel"> 
+                    <li class="lang_sel" onclick="dropTopDown()"> 
                         <a href="#" class="pc">Global/English <img src="images/icon_arrow1.png" alt="언어선택"></a>
-                        <div class="lang pc">
+                        <div class="lang pc" id="lang">
                             <a href="#">korea/한국어</a>
                             <a href="#">Global/English</a>
                         </div>
@@ -109,13 +110,13 @@
                 <p class="contact14"><a href="#">Contact Us</a></p>
             </div> <!--inner-->
         </div><!--//topmenu-->
-        <!--전체메뉴 클릭시 나오는 메뉴-->      
+        <!--태블릿 전용-->      
         <div class="modal">
             <h1 class="tb_logo"><a href="#"><img src="images/img_logo2.png" alt="cello"></a></h1>
-            <h2 class="blind">주메뉴</h2>
+            <h2 class="blind">Main menu</h2>
             <nav id="gnb">
                 <ul class="inner">
-                    <li><a href="#">Cello BPO <span>더보기</span></a></li>
+                    <li><a href="#">Cello BPO <span>Read More</span></a></li>
                     <li><a href="#">Cello Square</a></li>
                     <li><a href="#">Cello Plus</a></li>
                     <li><a href="#">About Us</a></li>
@@ -126,14 +127,14 @@
             <div class="topMenu">
                 <ul>
                     <li><a href="#">
-                    <i class="xi-lock-o"></i> Login</a></li>
-                    <li><a href="#"><i class="xi-link"></i> Sign Up</a></li>
-                    <li><a href="#"><i class="xi-maker"></i>  Global Network</a></li>
+                    <i class="xi-lock-o"></i>Login</a></li>
+                    <li><a href="#"><i class="xi-link"></i>Sign Up</a></li>
+                    <li><a href="#"><i class="xi-maker"></i>Global Network</a></li>
                     <li class="lang_sel"><a href="#"><i class="xi-globus"></i>Kor/Eng</a></li>
                 </ul>
                 <p><a href="#"><i class="xi-headset"></i> Contact Us</a></p>
             </div><!--//topmenu-->
-            <p class="tb_close_btn"><span>닫기</span></p>
+            <p class="tb_close_btn"><span>Close Menu Popup</span></p>
         </div><!--//modal-->
     </header>  
     <main>
@@ -183,15 +184,15 @@
                 </li>
             </ul>
             <ul class="pager inner">
-                <li class="num active"><a href="#"><span class="blind">1번이미지</span></a></li>
-                <li class="num"><a href="#"><span class="blind">2번이미지</span></a></li>
-                <li class="num"><a href="#"><span class="blind">3번이미지</span></a></li>
-                <li class="pau"><a href="#"><span class="blind">정지</span></a></li>
-                <li class="play"><a href="#"><span class="blind">재생</span></a></li>
+                <li class="num active"><a href="#"><span class="blind">1st Image</span></a></li>
+                <li class="num"><a href="#"><span class="blind">2nd Image</span></a></li>
+                <li class="num"><a href="#"><span class="blind">3rd Image</span></a></li>
+                <li class="pau"><a href="#"><span class="blind">Pause Images</span></a></li>
+                <li class="play"><a href="#"><span class="blind">Play Images</span></a></li>
             </ul>
             <ul class="arr_btn">
-                <li class="prev"><a href="#">이전이미지</a></li>
-                <li class="next"><a href="#">다음이미지</a></li>
+                <li class="prev"><a href="#">Previous Image</a></li>
+                <li class="next"><a href="#">Next Image</a></li>
             </ul>
         </div><!--//main_visual-->
         <!--Industries-->
@@ -243,9 +244,9 @@
                 </li>
                 <li>
                     <ul class="all">
-                        <li><a href="#">White Papers<span>더보기</span></a></li>
-                        <li><a href="#">Newsletter Subscription<span>더보기</span></a></li>
-                        <li><a href="#">Market Trends<span>더보기</span></a></li>
+                        <li><a href="#">White Papers<span>Read More</span></a></li>
+                        <li><a href="#">Newsletter Subscription<span>Read More</span></a></li>
+                        <li><a href="#">Market Trends<span>Read More</span></a></li>
                     </ul>
                 </li>
                 <li class="visual2 visual">
@@ -269,10 +270,10 @@
                 <h2 class="con_hd">Connect with Us</h2>
                 <p class="con_pg">Connect with us on social media and check all the latest Cello content and videos.</p>
                 <ul class="alignc">
-                    <li><a href="#"><img src="images/icon_connect1.png" alt="유튜브"></a></li>
-                    <li><a href="#"><img src="images/icon_connect2.png" alt="인스타"></a></li>
-                    <li><a href="#"><img src="images/icon_connect3.png" alt="페이스북"></a></li>
-                    <li><a href="#"><img src="images/icon_connect4.png" alt="워드프레스"></a></li>
+                    <li><a href="#"><img src="images/icon_connect1.png" alt="Youtube homepage"></a></li>
+                    <li><a href="#"><img src="images/icon_connect2.png" alt="Instagram homepage"></a></li>
+                    <li><a href="#"><img src="images/icon_connect3.png" alt="Facebook homepage"></a></li>
+                    <li><a href="#"><img src="images/icon_connect4.png" alt="WordPress homepage"></a></li>
                 </ul>
             </section>
         </div><!--sns con4-->
@@ -346,7 +347,7 @@
     <footer>
         <div class="inner">
             <ul class="link2">
-                <li class="pc"><a href="#">Contact Us</a></li>
+                <li><a href="#">Contact Us</a></li>
                 <li><a href="#">Subscrible to Newsletter</a></li>
                 <li><a href="#">Terms of use</a></li>
                 <li><a href="#">Privacy Policy</a></li>
@@ -355,25 +356,21 @@
             <ul class="sns6">
                 <li><a href="#"><img src="images/icon_connect1.png" alt="유튜브"></a></li>
                 <li><a href="#"><img src="images/icon_connect2.png" alt="인스타"></a></li>
-                <li><a href="#"><img src="images/icon_connect3.png"alt="페이스북"></a></li>
+                <li><a href="#"><img src="images/icon_connect3.png" alt="페이스북"></a></li>
                 <li><a href="#"><img src="images/icon_connect4.png" alt="워드프레스"></a></li>
             </ul>               
-            <div class="dropdown">
-                <a href="#">Family Site</a>
-                <a href="#" class="dropsub">Cello square 3.0</a>
+            <div class="dropdown" onclick="dropDown()">
+                <p><a href="javascript:void(0)">Family Site</a></p>
+                <p id="dropSub"><a href="https://ship.cellosquare.com/login">Cello square 3.0</a></p>
             </div>
-            <address class="pc address">
+            <address class="address">
                 <p>Samsung SDS Logistics Business Unit</p>
                 <p>13530, Samsung SDS Pangyo Campus, Gyeonggi-do Bundang-gu, Seongnam-si</p>
                 <p><small>Copyright 2019 SAMSUNG SDS. All rights reserved. <img src="images/img_wa_mark.png" alt="wa"></small></p>
             </address>
-            <address class="tb address">
-                <p>Samsung SDS Logistics Business Unit</p>
-                <p>13530, Samsung SDS Pangyo Campus,<br/>Gyeonggi-do Bundang-gu, Seongnam-si</p>
-                <p><small>Copyright 2019 SAMSUNG SDS. All rights reserved.</small></p>
-            </address>
         </div>
     </footer>
+    <script src="click.js"></script>
 </body>
 </html>
 

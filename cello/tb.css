@@ -16,7 +16,6 @@ body{
 }
 
 header{
-    width:inherit;
     position: fixed;
     height:3.125rem;
     padding:0.625rem;
@@ -63,15 +62,17 @@ header{
     left:0;
     width:100%;
     background:#fff;
+    display:block;
 }
 
 .tb_logo{
     height:3.125rem;
     background:#0f5431;
+    outline:1px solid red;
 }
 
 .tb_logo img{
-    padding:1rem 0 0 1rem;
+    padding:1rem;
     height:1.687rem;/*w60px h.27px*/
 }
 /*닫기*/
@@ -710,6 +711,10 @@ footer{
     height:auto;
 }
 
+footer ul{
+    display: initial;
+    justify-content: initial;
+}
 
 footer .inner{
     padding:20px;
@@ -720,13 +725,21 @@ footer .inner{
     left:0;
 }
 
-.link2, address > p > small > img{
-    display: none;
+.link2{
+    display:block;
+    width:100%;
+    text-align:center;
+    margin:0 auto;
+    font-size:.8rem;
 }
 
-footer ul{
-    display: initial;
-    justify-content: initial;
+.link2 li{
+    display:inline-block;
+    margin-top:40px;
+}
+
+.link2 li:nth-child(2)::before{
+    display:none;
 }
 
 .dropdown{
@@ -741,22 +754,21 @@ footer ul{
     font-size:.875rem;
 }
 
-.dropdown a{
+.dropdown p{
     border:1px solid #555;
-    display: block;
     width:100%;
     text-indent:10px;
     padding:.4rem;
 }
 
-.dropdown a:nth-child(2){
+#dropSub{
     display:none;
 }
 
 .sns6{
     display: block;
     padding:0;
-    margin-top:40px;
+    margin-top:20px;
     text-align: center;
 }
 
@@ -770,21 +782,29 @@ footer ul{
 }
 
 .sns6 li a{
-    width:1.875rem;
-    height:1.875rem;
+    width:30px;
+    height:30px;
+}
 
+.sns6 li img{
+    width:30px;
+    height:30px;
 }
 
 footer .address{
     font-size:.75rem;
     position: initial;
-    width:100%;
+    width:260px;
     margin:20px auto 0;
     text-align: center;
 }
 
-footer p small{
-    font-size:1rem;
+footer .address p:last-child{
+    font-size:.8rem;
+}
+
+footer address > p > small > img{
+    display: none;
 }
 
 

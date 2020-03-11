@@ -69,11 +69,11 @@ header nav.hd{
     height:140px;
 }
 
-.gnb{
+nav{
     overflow:hidden;
 }
 
-ul.gnb:hover{
+nav:hover{
     overflow:visible;
 }
 
@@ -128,6 +128,7 @@ ul.gnb:hover{
     background:#fff;
     opacity:0;
     border:1px solid #ddd;
+    height:383px;
 }
 
 .gnb > li > ul{
@@ -137,24 +138,19 @@ ul.gnb:hover{
     font-size:.75rem;
     top:140px;
     color:#444;
-    height:382px;
+    height:383px;
     width:180px;
     line-height:.75rem;
     padding:0 15px;
     box-sizing:border-box;
 }
 
-header nav:hover + div.dim{
-    height:383px;
+nav:hover + div.dim/*,div.dim:hover*/{
     opacity:1;
 }
 
 .gnb > li > ul > li{
-    margin-top:30px;
-}
-
-.gnb > li > ul > li:first-child{
-    margin-top:20px;
+    margin-top:34px;
 }
 
 
@@ -164,7 +160,7 @@ header nav:hover + div.dim{
 }
 
 .gnb > li > ul > li > ul > li{
-    margin-top:12px;
+    margin-top:16px;
 }
 
 /*탑메뉴*/
@@ -240,10 +236,6 @@ header nav:hover + div.dim{
 
 .lang a:first-child{
     margin-bottom:10px;
-}
-
-.lang_sel:hover .lang{
-    height:160%;
 }
 
 .contact14 a{
@@ -789,7 +781,8 @@ footer ul{
 .link2 li ~ li:before{
     content:"";
     display:inline-block;
-    width:1px;height:10px;
+    width:1px;
+    height:10px;
     background:#555;
     margin:0 1rem;
 }
@@ -804,12 +797,13 @@ footer ul{
 
 .sns6 li a{
     display:block;
-    width:16px;
-    height:16px;
+    width:24px;
+    height:24px;
 }
 
 .sns6 img{
-    width:100%;
+    width:24px;
+    height:24px;
 }
 
 .dropdown{
@@ -821,18 +815,23 @@ footer ul{
     box-sizing: border-box;
     background:url(images/icon_arrow2.png) no-repeat 90% 50%;
     text-indent:10px;
+    z-index:89;
 }
 
-.dropdown a{
+.dropdown p{
     border:1px solid #555;
-    display:block;
     width:8rem;
     height:1.8rem;
     line-height:1.8rem;
 }
 
-.dropdown a:nth-child(2){
+.dropdown p a{
+    color:#fff;
+}
+
+#dropSub{
     display:none;
+    background: #353736;
 }
 
 footer .address{
