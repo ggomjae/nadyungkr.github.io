@@ -126,7 +126,7 @@ nav:hover{
     left:0;
     width:100%;
     background:#fff;
-    opacity:0;
+    display:none;
     border:1px solid #ddd;
     height:383px;
 }
@@ -145,8 +145,8 @@ nav:hover{
     box-sizing:border-box;
 }
 
-nav:hover + div.dim/*,div.dim:hover*/{
-    opacity:1;
+nav:hover + div.dim{
+    display:block;
 }
 
 .gnb > li > ul > li{
@@ -561,6 +561,7 @@ figcaption{
 }
 
 .con3 .all li a{
+    display:block;
     box-sizing:border-box;
     line-height:122px;
     text-indent:32px;
@@ -587,7 +588,7 @@ figcaption{
     height:18px;
     vertical-align: middle;
 }
-.con3 .all li a:hover{
+.con3 .all li:hover a{
     background: #0f5431;
     color:#fff;
 }
