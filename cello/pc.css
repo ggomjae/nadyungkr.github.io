@@ -348,6 +348,7 @@ ul.slick-dots{
 }
 
 ul.slick-dots li{
+    cursor: pointer;
     width:13px;
     height:13px;
     border-radius: 50%;
@@ -360,7 +361,7 @@ ul.slick-dots li.slick-active{
     background:#fff;
 }
 
-ul.slick-dots li>button{
+ul.slick-dots li > button{
     display:none;
 }
 
@@ -373,9 +374,11 @@ ul.slick-dots li>button{
 
 .main_visual .controls li{
     display:inline-block;
+    cursor: pointer;
 }
 
 .main_visual .controls li button{
+    cursor: pointer;
     border:none;
     background:transparent;
     width:12px;
@@ -596,6 +599,7 @@ figcaption{
     height:18px;
     vertical-align: middle;
 }
+
 .con3 .all li:hover a{
     background: #0f5431;
     color:#fff;
@@ -607,7 +611,7 @@ figcaption{
 
 /*sns*/
 .con4{
-    background:url(images/bg_mConnect1.jpg)no-repeat center fixed;
+    background:url(images/bg_mConnect1.jpg) 50% 50% no-repeat;
 }
 
 .alignc{
