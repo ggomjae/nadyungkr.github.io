@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700,900&display=swap">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="pc.min.css">  
     <link rel="stylesheet" media ="screen and (max-width:1239px)" href="tb.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700,900&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <title>Cello Logistics</title>
 </head>
 <body>
@@ -139,59 +141,31 @@
     <main>
         <div class="main_visual">
             <ul class="visual_container">
-                <li class="fb pc">
+                <li class="slide1 pc">
                     <div class="txt inner">
                         <h2>Cello BPO</h2>
                             <p>We offer competitive logistics BPO services based on our extensive global network<br/>and the large quantities of cargo we handle.</p>
                             <a href="#" title="cello BPO">Read More</a>       
                     </div>
                 </li>
-                <li class="sb pc">
+                <li class="slide2 pc">
                     <div class="txt inner">
                         <h2>Cello Square</h2>
                         <p>We offer a comprehensive range of logistics services<br/>on our intelligent logistics platform, Celo Square.</p>
                         <a href="#" title="cello square">Read More</a>
                     </div>
                 </li>
-                <li class="thb pc">
+                <li class="slide3 pc">
                     <div class="txt inner">
                         <h2>Cello Plus</h2>
                         <p>Cello Plus, a logistics platform built with advanced<br/>technologies, offers innovative logistics services.</p>
                         <a href="#" title="cello plus">Read More</a>
                     </div>
                 </li>
-                <li class="fb tb">
-                    <div class="txt inner">
-                        <h2>Cello BPO</h2>
-                            <p>We offer competitive logistics BPO services based on<br/>our extensive global network and the large<br/>quantities of cargo we handle.</p>
-                            <a href="#" title="cello BPO">Read More</a>       
-                    </div>
-                </li>
-                <li class="sb tb">
-                    <div class="txt inner">
-                        <h2>Cello Square</h2>
-                        <p>We offer a comprehensive range of logistics<br/> services on our intelligent logistics platform,<br/>Celo Square.</p>
-                        <a href="#" title="cello square">Read More</a>
-                    </div>
-                </li>
-                <li class="thb tb">
-                    <div class="txt inner">
-                        <h2>Cello Plus</h2>
-                        <p>Cello Plus, a logistics platform built with<br/> advanced technologies, offers innovative<br/>logistics services.</p>
-                        <a href="#" title="cello plus">Read More</a>
-                    </div>
-                </li>
             </ul>
-            <ul class="pager inner">
-                <li class="num active"><a href="#"><span class="blind">1st Image</span></a></li>
-                <li class="num"><a href="#"><span class="blind">2nd Image</span></a></li>
-                <li class="num"><a href="#"><span class="blind">3rd Image</span></a></li>
-                <li class="pau"><a href="#"><span class="blind">Pause Images</span></a></li>
-                <li class="play"><a href="#"><span class="blind">Play Images</span></a></li>
-            </ul>
-            <ul class="arr_btn">
-                <li class="prev"><a href="#">Previous Image</a></li>
-                <li class="next"><a href="#">Next Image</a></li>
+            <ul class="controls">
+                <li><button class="play"><span class="blind">Play</span></button></li>
+                <li><button class="pause"><span class="blind">Pause</span></button></li>
             </ul>
         </div><!--//main_visual-->
         <!--Industries-->
@@ -370,6 +344,19 @@
         </div>
     </footer>
     <script src="click.js"></script>
+    <script>
+        $('.visual_container').slick({
+            autoplay:true,
+            autoplaySpeed: 2000,
+            dots:true
+        });
+        $('.play').on('click',function(){
+            $('.visual_container').slick('slickPlay');
+        });
+        $('.pause').on('click',function(){
+            $('.visual_container').slick('slickPause');
+        });
+    </script>
 </body>
 </html>
 

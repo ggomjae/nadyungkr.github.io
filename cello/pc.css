@@ -249,47 +249,29 @@ nav:hover + div.dim{
     top:140px;
     width:100%;
     height:720px;
-    overflow:hidden;
 }
 
-.visual_container {
-    width:300%;
+.visual_container li{
+    width:100%;
     height:720px;
 }
 
 /*배너가 3개이므로 li float 높이height 추가함*/
-.visual_container > li{
-    width:33.333%;
-    float:left;
-    height:720px;
-}
-
-.fb{
+.slide1{
     background:url(images/img_mainVisual1.png)no-repeat 50% 0;
 }
 
-.sb{
+.slide2{
     background:url(images/img_mainVisual2.png)no-repeat 50% 0;
 }
 
-.thb{
+.slide3{
     background:url(images/img_mainVisual3.png)no-repeat 50% 0;
 }
 
-.fb .txt{
-    width:57.5rem;
-}
-
-.sb .txt{
+.visual_container li .txt{
     width:36.5rem;
-}
-
-.thb .txt{
-    width:36.5rem;
-}
-/** txt 같이 움직이게 하기 위해서 txt에 inner 추가함*/
-.txt{
-    margin:7rem  auto;
+    margin:7rem 10rem 3rem;
     font-weight:700;
 }
 
@@ -307,7 +289,6 @@ nav:hover + div.dim{
     line-height:1.2;
 }
 
-
 .txt > a{
     display:block;
     width:5.5rem;
@@ -319,70 +300,95 @@ nav:hover + div.dim{
     line-height: 1.5rem;
 }
 
-.pager {
-    position: relative;
-    bottom:13rem;
-    width:57.5rem;
-    margin:auto;
-    height:.8rem;
+.visual_container .slick-arrow{
+    position: absolute;
+    z-index:93;
+    top:50%;
+    transform:translateY(-50%);
+    width:71px;
+    height:71px;
+    border-radius: 100%;
+    background:rgba(255,255,255,.0);
+    border:none;
 }
 
-.pager li{
-    float:left;margin-right: 10px;
-}
-
-.pager li a{
+.visual_container button:before{
+    font-family: xeicon;
     color:#fff;
+    font-size:45px;
 }
 
-.num a:before {
-    content:"";
-    display:inline-block;
-    width:14px;
-    height:14px;
+.visual_container button.slick-prev{
+    left:50px;
+    font-size:0;
+    color:transparent;
+}
+
+.visual_container button.slick-prev:before{
+    content:"\e93d";
+    font-family:xeicon;
+}
+
+.visual_container button.slick-next{
+    right:50px;
+    font-size:0;
+    color:transparent;
+}
+
+.visual_container button.slick-next:before{
+    content:"\e940";
+    font-family:xeicon;
+}
+
+ul.slick-dots{
+    position: absolute;
+    top:500px;
+    left:10.5rem;
+    list-style-type:none;
+}
+
+ul.slick-dots li{
+    width:13px;
+    height:13px;
+    border-radius: 50%;
     border:1px solid #fff;
-    border-radius:14px;
+    display: inline-block;
+    margin-right:14px;
 }
 
-.pager .active a:before{
+ul.slick-dots li.slick-active{
     background:#fff;
 }
 
-/*정지,재생버튼*/
-.pau a:before{
-    content:"";
-    display:inline-block;
-    width:6px;
-    height:15px;
-    background:url(images/icon_stop.png) no-repeat 0 0;
+ul.slick-dots li>button{
+    display:none;
 }
 
-.play a:before{
-    content:"";
+.main_visual .controls{
+    position: absolute;
+    z-index:93;
+    top:498px;
+    left:15rem;
+}
+
+.main_visual .controls li{
     display:inline-block;
+}
+
+.main_visual .controls li button{
+    border:none;
+    background:transparent;
     width:12px;
     height:15px;
-    background:url(images/icon_play.png) no-repeat 0 0;
-    position:relative;
 }
 
-.arr_btn li{
-    position:absolute;
-    bottom:50%;
-    width:22px;
-    height:43px;
-    text-indent:-9999px;
-    overflow:hidden;
+.main_visual .controls li button.play{
+    background:url(images/icon_play.png) 100% 100% no-repeat;
 }
 
-.arr_btn .prev{
-    left:3rem;/*60px;*/
-    background:url(images/icon_arrow9_1.png) no-repeat 0 0;
+.main_visual .controls li button.pause{
+    background:url(images/icon_stop.png) 100% 100% no-repeat;
 }
-
-.arr_btn .next{
-    right:3rem;
-    background:url(images/icon_arrow9_2.png) no-repeat 0 0;}
 
 /*content*/
 .con{
@@ -509,14 +515,16 @@ nav:hover + div.dim{
 .con3 .tb{
     display:none;
 }
+
 .con3 > .contents1 {
-    display:flex;width:100%;
+    display:flex;
+    width:100%;
 }
 
 .con3 > .contents1 > li{
-        flex:1;
-        height:18.3rem;
-        box-shadow:0 0 30px rgba(26, 33, 56, .1);}
+    flex:1;
+    height:18.3rem;
+    box-shadow:0 0 30px rgba(26, 33, 56, .1);}
 
 .con3 > .contents1 > li:nth-child(2){
     margin:0 1.25rem;

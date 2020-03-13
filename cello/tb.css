@@ -199,132 +199,124 @@ header nav ul > li:nth-child(3) {
 
 /*main*/
 /*메인비쥬얼*/
-.main_visual{
+.main_visual {
     position: relative;
-    top:3.125rem;
+    top:50px;
     width:100%;
-    height:24.5rem;
+    height:390px;
 }
 
-.visual_container{
-    height:24.5rem;
+.visual_container li{
+    width:100%;
+    height:390px;
 }
 
-.visual_container > li{
-   height:24.5rem;
-}
+/*배너가 3개이므로 li float 높이height 추가함*/
 
-.fb .txt{
-    width:36.5rem;
-}
-
-.sb .txt{
-    width:36.5rem;
-}
-
-.thb .txt{
-    width:36.5rem;
-}
-
-.txt{
-    margin:2.5rem  auto;
-    font-weight:700;
+.visual_container li .txt{
+    width:22rem;
+    margin:0 auto;
+    text-align:center;
 }
 
 .txt,.txt a{
     color:#fff;
+    padding:0;
 } 
 
 .txt > h2{
-    text-align: center;
-    font-weight:600;
+    padding:0;
     font-size:1.875rem;
+    font-weight: 800;
+    margin: 2rem 0;
 }
 
 .txt > p{
-    text-align: center;
-    font-size:1rem;
-    padding:2.5rem 0 1.9rem;
-    line-height:1.2;
+    padding:0;
+    font-size:.875rem;
+    font-weight:400;
 }
 
 .txt > a{
-    display: block;
-    text-align: center;
     margin:0 auto;
-    font-size:1rem;
+    display:block;
     width:7rem;
+    min-width:7rem;
     height:2rem;
-    line-height:2rem;
-    border-radius:1.25rem;
-    border:2px solid #fff;
-}
-
-.pager{
-    position: relative;
-    left:50%;
-    bottom:2rem;
-    margin-left:-1.5rem;
-    height:.8rem;
-}
-
-.pager li{
-    float:left;
-    margin-right:10px;
-}
-
-.pager li a{
-    color:#fff;
-}
-
-.num a:before{
-    content:"";
-    display:inline-block;
-    width:14px;
-    height:14px;
     border:1px solid #fff;
-    border-radius:14px;
+    border-radius:1.25rem;
+    font-size:0.937rem;
+    text-align: center;
+    line-height: 2rem;
+    margin-top:2rem;
 }
 
-.pager .active a:before{
+.visual_container .slick-arrow{
+    display:none;
+    width:0;
+    height:0;
+    font-size:0;
+    color:transparent;
+}
+
+.visual_container .slick-arrow:before{
+    display:none;
+    width:0;
+    height:0;
+    font-size:0;
+    color:transparent;
+}
+
+ul.slick-dots{
+    position: absolute;
+    top:300px;
+    left:48%;
+    transform:translateX(-50%);
+    list-style-type:none;
+}
+
+ul.slick-dots li{
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    border:1px solid #fff;
+    display: inline-block;
+    margin-right:14px;
+}
+
+ul.slick-dots li.slick-active{
     background:#fff;
 }
 
-/*정지,재생버튼*/
-.pau a:before{
-    content:"";
-    display:inline-block;
-    width:6px;
-    height:15px;
-    background:url(images/icon_stop.png) no-repeat 0 0;
+ul.slick-dots li>button{
+    display:none;
 }
 
-.play a:before{
-    position:relative;
-    content:"";
+.main_visual .controls{
+    position: absolute;
+    z-index:93;
+    top:298px;
+    left:53%;
+    transform:translateX(-50%);
+}
+
+.main_visual .controls li{
     display:inline-block;
+}
+
+.main_visual .controls li button{
+    border:none;
+    background:transparent;
     width:12px;
     height:15px;
-    background:url(images/icon_play.png) no-repeat 0 0;
 }
 
-.arr_btn li{
-    position:absolute;
-    bottom:50%;
-    width:22px;
-    height:43px;
-    text-indent:-9999px;
-    overflow:hidden;
+.main_visual .controls li button.play{
+    background:url(images/icon_play.png) 100% 100% no-repeat;
 }
 
-.arr_btn .prev{
-    left:3rem;
-    background:url(images/icon_arrow9_1.png) no-repeat 0 0;
-}
-
-.arr_btn .next{
-    right:3rem;
-    background:url(images/icon_arrow9_2.png) no-repeat 0 0;
+.main_visual .controls li button.pause{
+    background:url(images/icon_stop.png) 100% 100% no-repeat;
 }
 
 /*content1  industries*/
@@ -420,7 +412,8 @@ header nav ul > li:nth-child(3) {
 
 .con3 > ul:first-child > li{
     width:33.333%;
-    height:47.25rem;}
+    height:47.25rem;
+}
 
 .con3 > ul:first-child > li:nth-child(2){
     order:1;
