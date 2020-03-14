@@ -154,7 +154,6 @@ nav:hover + div.dim{
     margin-top:34px;
 }
 
-
 .gnb > li > ul > li > ul{
     font-size:.65rem;
     color:#888;
@@ -303,6 +302,7 @@ nav:hover + div.dim{
 
 .visual_container .slick-arrow{
     position: absolute;
+    cursor: pointer;
     z-index:93;
     top:50%;
     transform:translateY(-50%);
@@ -311,12 +311,14 @@ nav:hover + div.dim{
     border-radius: 100%;
     background:rgba(255,255,255,.0);
     border:none;
+    outline:0;
 }
 
 .visual_container button:before{
     font-family: xeicon;
     color:#fff;
     font-size:45px;
+    outline:0;
 }
 
 .visual_container button.slick-prev{
@@ -356,10 +358,12 @@ ul.slick-dots li{
     border:1px solid #fff;
     display: inline-block;
     margin-right:14px;
+    outline:0;
 }
 
 ul.slick-dots li.slick-active{
     background:#fff;
+    outline:0;
 }
 
 ul.slick-dots li > button{
@@ -371,11 +375,11 @@ ul.slick-dots li > button{
     z-index:93;
     top:498px;
     left:15rem;
+    outline:0;
 }
 
 .main_visual .controls li{
     display:inline-block;
-    cursor: pointer;
 }
 
 .main_visual .controls li button{
@@ -388,10 +392,12 @@ ul.slick-dots li > button{
 
 .main_visual .controls li button.play{
     background:url(images/icon_play.png) 100% 100% no-repeat;
+    outline:0;
 }
 
 .main_visual .controls li button.pause{
     background:url(images/icon_stop.png) 100% 100% no-repeat;
+    outline:0;
 }
 
 /*content*/
