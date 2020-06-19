@@ -1,144 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="박현정" author="박현정의 포트폴리오"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>박현정의 포트폴리오</title>
-    <link rel="stylesheet" href="css/main.min.css"/>
-    <link rel="stylesheet" href="css/reset.min.css"/>  
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous"/>
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="shortcut icon" href="images/nadyung_woman_sd_character.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/reset.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <div id="skipNav">
-        <a href="#main">본문 바로가기</a>
+    <div class="loader-wrapper">
+        <div class="loader">로딩중입니다</div>
     </div>
-    <header id="header">
-        <h1><em>PARK</em>HYEONJEONG</h1>
-        <div id="menu" onclick="openNav()"><i class="xi-bars"></i><span class="blind">메뉴 열기</span></div>
+    <header>
+        <div class="inner">
+            <h1 id="logo">
+                <?xml version="1.0" encoding="utf-8"?>
+                    <!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0{fill:#FFFFFF;stroke:#FFABAB;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                        .st1{fill:#FFABAB;stroke:#FFABAB;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    </style>
+                    <g>
+                        <path class="st0" d="M33,13C24.6,33.3,15.8,53.4,6.4,73.2c0.5-4.6,3-8.8,5.7-12.6c3.6-4.9,7.8-9.4,13-12.7
+                            c5.1-3.3,11.2-5.2,17.3-4.8c2,0.1,4.1,0.6,5.7,1.7c3.6,2.5,4.2,7.4,4,11.8s-1.1,8.9,0.6,12.9c2.2,5.3,8.5,8.1,14.3,7.7
+                            s11-3.4,15.6-6.9c2.4-1.8,4.8-3.9,6.3-6.5c1.6-2.6,2.2-5.9,1.1-8.8"/>
+                        <g>
+                            <path class="st1" d="M30.8,12.4C22.5,32.5,13.7,52.4,4.5,72c1.4,0.6,2.8,1.2,4.1,1.7c1.9-12.6,15.4-25.6,27.8-28
+                                c3.8-0.7,9-1,11.6,2.3c1.9,2.4,1.9,5.7,1.8,8.6c-0.2,5.4-1.3,10.9,1.8,15.7c5.1,8.1,16,8.4,24,4.8c8.6-3.9,19.6-12.1,16.6-22.8
+                                c-0.8-2.8-5.2-1.6-4.4,1.2c2.1,7.5-6,13.1-11.7,16.2c-5.7,3.2-13.3,4.8-18.8,0.2C49,65,58.9,51.2,50.2,43.7
+                                c-7.5-6.5-20.6-1.6-27.6,3.2C14.4,52.6,5.8,62.4,4.2,72.6c-0.3,2.3,2.9,4.3,4.1,1.7c9.4-20,18.4-40.3,26.8-60.7
+                                C36.3,10.9,31.9,9.7,30.8,12.4L30.8,12.4z"/>
+                        </g>
+                    </g>
+                    <g>
+                        <path class="st0" d="M86.1,38.6c-1.2,1.7,0.5,4.5,1.5,5.6c0.6,0.7,1.1,0.9,1.5,0.9c0.8,0.1,1.6-0.2,2.1-0.8s0.8-1.3,1.1-2.1
+                            c0.3-0.9,0.5-1.9,0.4-2.8c0-0.2-0.4-1.6-1.6-2.2c-0.6-0.3-1.2-0.2-1.9-0.1C88.1,37.5,86.8,37.7,86.1,38.6z"/>
+                    </g>
+                    </svg>
+            </h1>
+            <nav id="nav">
+                <div class="mNav">
+                    <span class="nav-icon"></span><span class="nav-icon"></span><span class="nav-icon"></span><span class="nav-icon"></span>
+                </div>
+                <ul class="menu">
+                    <li class="active"><a href="#section1">Home</a></li>
+                    <li><a href="#section2">About</a></li>
+                    <li><a href="#section3">Web</a></li>
+                    <li><a href="#section4">App</a></li>
+                    <li><a href="#section5">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main id="main">
-        <div id="nav">
-                <ul id="gnb">
-                    <li><a href="#section1" onclick="closeNav()">HOME</a></li>
-                    <li><a href="#section2" onclick="closeNav()">PROJECT</a></li>
-                    <li><a href="#section3" onclick="closeNav()">PROFILE</a></li>
-                    <li class="closebtn" onclick="closeNav()"><i class="xi-close"></i><span class="blind">메뉴 닫기</span></li>
-                </ul>
-        </div>
-        <div id="fullpage">
-            <div class="section s1">
-                <div class="home_bg"></div>
-                <div class="home_container">
-                    <h2 class="home_h2">Hello I'm<br/>
-                    <span id="autoType"></span></h2>
-                    <p class="home_txt">안녕하세요. 퍼블/프론트 신입 박현정입니다.<br/>
-                        'Creative' 제가 제일 좋아하는 단어예요.<br/>
-                        디자인과 개발은 너무 멋있고 매력적인 직업이라 생각해요.
-                    </p>
+    <main id="contents">
+        <div class="inner">
+            <div id="section1">
+                <div class="stack">
+                    <div class="card live">
+                        <div class="cartoon">
+                            <h2 class="portfolio"><span>P</span><span>O</span><span>R</span><span>T</span><span>F</span><span>O</span><span>L</span><span>I</span><span>O</span></h2> 
+                            <span class="clickme">Click</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cartoon">
+                            <div class="bubble mini bottom"><img src="images/8bit_heart.png" alt="8bit pixel heart icon"></div>
+                            <p>Thank you for stopping by...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cartoon">
+                            <ul>
+                                <li><img src="images/google-chrome_logo.png" alt="구글 크롬 브라우저"></li>
+                                <li><img src="images/firefox_logo.png" alt="파이어폭스 브라우저"></li>
+                                <li><img src="images/edge_logo.png" alt="마이크로 소프트 엣지 브라우저"></li>
+                            </ul>
+                            <p>Chrome, Firefox, Edge 브라우저에 최적화 되어있습니다.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="section s2">
-                <div class="slide lol" data-anchor="slide1">
-                    <div class="slidewrap">
-                        <div class="slidecontent">
-                            <h2>LEAGUE OF<br/>LEGENDS</h2>
-                            <p>100% 웹퍼블리싱 적응형 홈페이지</p>
-                            <p>마우스 hover 효과, 스프라이트 이미지 사용</p>
-                            <ul>
-                                <li><a href="https://github.com/nadyungkr/HardCoding-LeagueOfLegends" target="_blank">CODE VIEW</a></li>
-                                <li><a href="https://nadyungkr.github.io/images/lolimg.png" target="_blank">IMAGE VIEW</a></li>
-                            </ul>
-                            <p class="webpage"><a href="https://nadyungkr.github.io/lol/lol" target="_blank">WEB PAGE</a></p>
-                            <p class="arrowbottom"><i class="xi-arrow-right"></i></p>
-                        </div>
+            <div id="section2">
+                <div class="skill_box s1">
+                    <button class="skill_btn">Character</button>
+                    <div class="panel">
+                        <dl>
+                            <dt class="c1">Responsibility</dt>
+                            <dd>프로젝트 끝날 때까지 뼈를 묻는 성격</dd>
+                        </dl>
+                        <dl>
+                            <dt class="c2">Joyful</dt>
+                            <dd>매사를 즐겁게! Joyful! Joypark!</dd>
+                        </dl>
+                        <dl>
+                            <dt class="c3">Energetic</dt>
+                            <dd>열정이 넘치는 나! 박렬정!</dd>
+                        </dl>
                     </div>
                 </div>
-                <div class="slide mnh" data-anchor="slide2">
-                    <div class="slidewrap">
-                        <div class="slidecontent">
-                            <h2>MNH<br/>ENTERTAINMENT</h2>
-                            <p>100% 웹퍼블리싱 적응형 홈페이지</p>
-                            <p>JS의 scrollTop 기능을 이용한 sticky header</p>
-                            <ul>
-                                <li><a href="https://github.com/nadyungkr/HardCoding-MNHEnter" target="_blank">CODE VIEW</a></li>
-                                <li><a href="https://nadyungkr.github.io/images/mnhimg.png" target="_blank">IMAGE VIEW</a></li>
-                            </ul>
-                            <p class="webpage"><a href="https://nadyungkr.github.io/mnh/mnh" target="_blank">WEB PAGE</a></p>
-                            <p class="arrowbottom"><i class="xi-arrow-right"></i></p>
-                        </div>
+                <div class="skill_box s2">
+                    <button class="skill_btn">Skill</button>
+                    <div class="panel">
+                        <dl>
+                            <dt>Semantic Tag</dt>
+                            <dd>정확한 컨텐츠의 식별을 위해 사용</dd>
+                        </dl>
+                        <dl>
+                            <dt>Responsive Web</dt>
+                            <dd>어디서 봐도 예쁜 반응형 웹의 경험</dd>
+                        </dl>
+                        <dl>
+                            <dt>Trouble Shooter</dt>
+                            <dd>코딩은 디버깅으로, 프로젝트는 적극적 의사소통과 참여로</dd>
+                        </dl>
+                        <dl>
+                            <dt>Git/Github</dt>
+                            <dd>개발 능률의 향상을 위해 VSCode와의 연동, 기록과 백업</dd>
+                        </dl>
+                        <dl>
+                            <dt>Ps/Ai/Xd</dt>
+                            <dd>다양한 편집툴(tool) 사용에 능숙</dd>
+                        </dl>
+                        <dl>
+                            <dt>Keep at it</dt>
+                            <dd>정말로 하고 싶은 일을 열정을 가지고 계속하는 자세</dd>
+                        </dl>
                     </div>
                 </div>
-                <div class="slide dat" data-anchor="slide3">
-                    <div class="slidewrap">
-                        <div class="slidecontent">
-                            <h2>DA<br/>TECHNOLOGY</h2>
-                            <p>100% 웹퍼블리싱 적응형 홈페이지</p>
-                            <p>순수 CSS로 메뉴에 Dropdown, hover 효과</p>
-                            <ul>
-                                <li><a href="https://github.com/nadyungkr/HardCoding-DATech" target="_blank">CODE VIEW</a></li>
-                                <li><a href="https://nadyungkr.github.io/images/datimg.png" target="_blank">IMAGE VIEW</a></li>
-                            </ul>
-                            <p class="webpage"><a href="https://nadyungkr.github.io/dat/dat" target="_blank">WEB PAGE</a></p>
-                            <p class="arrowbottom"><i class="xi-arrow-right"></i></p>
-                        </div>
+                <div class="skill_box s3">
+                    <button class="skill_btn">Education</button>
+                    <div class="panel">
+                        <dl>
+                            <dt>웹퍼블리셔 과정 수료(그린아카데미)</dt>
+                            <dd>2020. 02</dd>
+                        </dl>
+                        <dl>
+                            <dt>유아교육과 졸업(대전보건대학)</dt>
+                            <dd>2018. 02</dd>
+                        </dl>
+                        <dl>
+                            <dt>기술과학 과정 졸업(해남고등학교)</dt>
+                            <dd>2015. 02</dd>
+                        </dl>
                     </div>
                 </div>
-                <div class="slide cello" data-anchor="slide4">
-                    <div class="slidewrap">
-                        <div class="slidecontent">
-                            <h2>CELLO<br/>LOGISTICS</h2>
-                            <p>100% 웹퍼블리싱 반응형 홈페이지</p>
-                            <p>Display flex를 이용한 분기별 레이아웃</p>
-                            <ul>     
-                                <li><a href="https://github.com/nadyungkr/HardCoding-Cello" target="_blank">CODE VIEW</a></li>
-                                <li><a href="https://nadyungkr.github.io/images/celloimg.png" target="_blank">IMAGE VIEW</a></li>
-                            </ul>
-                            <p class="webpage"><a href="https://nadyungkr.github.io/cello/cello" target="_blank">WEB PAGE</a></p>
-                            <p class="arrowbottom"><i class="xi-arrow-right"></i></p>
-                        </div>
-                    </div> 
+                <div class="skill_box s4">
+                    <button class="skill_btn">License</button>
+                    <div class="panel">
+                        <dl>
+                            <dt>GTQ 1급</dt>
+                            <dd>2019. 10</dd>
+                        </dl>
+                        <dl>
+                            <dt>운전면허 2종</dt>
+                            <dd>2019. 02</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="skill_box s5">
+                    <button class="skill_btn">Blog</button>
+                    <div class="panel">
+                        <dl>
+                            <dt><a href="https://github.com/nadyungkr">1일 1커밋</a></dt>
+                            <dd>CSS3, SVG, Animation, Javascript Study, Vue.js, Javascript Framework</dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="https://2rel.me/about">LoL Blog</a></dt>
+                            <dd>League of Legends Game LOL Poster gallery</dd>
+                        </dl>
+                    </div>
                 </div>
             </div>
-            <div class="section s3">
-                <div class="sns_wrap">
-                    <span class="sns_more">MORE</span>
-                    <div class="sns_container">
-                        <a href="https://open.kakao.com/me/dyungkr" target="_blank"><i class="xi-kakaotalk"></i></a>
-                        <a href="tel:010-8894-2242"><i class="xi-mobile"></i></a>
-                        <a href="https://github.com/nadyungkr" target="_blank"><i class="xi-github"></i></a>
+            <div id="section3">
+                <div class="window-container">
+                    <div class="window-top">
+                        <div class="top-left">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <div class="clone cello">
+                            <div>
+                                <svg height="60" width="180" xmlns="http://www.w3.org/2000/svg">
+                                    <rect class="shape" height="60" width="180" />
+                                        <title>animation border</title>
+                                </svg>
+                                <div class="go_site"><a href="http://puiux.kr/cello/cello" target="_blank">Go site</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="txt_head cello_head">
+                        <p><strong>adaptive</strong><br/>Cello</p>
+                    </div>
+                </div><!--window-container-->
+                <div class="window-container">
+                    <div class="window-top">
+                        <div class="top-left">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <div class="clone dat">
+                            <div>
+                                <svg height="60" width="180" xmlns="http://www.w3.org/2000/svg">
+                                    <rect class="shape" height="60" width="180" />
+                                        <title>animation border</title>
+                                </svg>
+                                <div class="go_site"><a href="http://puiux.kr/dat/dat" target="_blank">Go site</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="txt_head dat_head">
+                        <p><strong>adaptive</strong><br/>DA tech</p>
+                    </div>
+                </div><!--window-container-->
+                <div class="window-container">
+                    <div class="window-top">
+                        <div class="top-left">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <div class="clone mnh">
+                            <div>
+                                <svg height="60" width="180" xmlns="http://www.w3.org/2000/svg">
+                                    <rect class="shape" height="60" width="180" />
+                                        <title>animation border</title>
+                                </svg>
+                                <div class="go_site"><a href="http://puiux.kr/mnh/mnh" target="_blank">Go site</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="txt_head mnh_head">
+                        <p><strong>adaptive</strong><br/>MNH</p>
+                    </div>
+                </div><!--window-container-->
+                <div class="window-container">
+                    <div class="window-top">
+                        <div class="top-left">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <div class="clone lol">
+                            <div>
+                                <svg height="60" width="180" xmlns="http://www.w3.org/2000/svg">
+                                    <rect class="shape" height="60" width="180" />
+                                        <title>animation border</title>
+                                </svg>
+                                <div class="go_site"><a href="http://puiux.kr/lol/lol" target="_blank">Go site</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="txt_head lol_head">
+                        <p><strong>adaptive</strong><br/>LoL</p>
+                    </div>
+                </div><!--window-container-->
+            </div>
+            <div id="section4">
+                <div class="app_container">
+                    <div class="phone_content purple">
+                        <div class="glass">
+                            <div class="camera"></div>
+                            <div class="screen">
+                                <span class="blind">CSS로 만든 스마트폰, 앱디자인 '모두앱' 이미지</span>
+                            </div>
+                            <div class="hold"></div>
+                        </div>
+                    </div>
+                    <div class="phone_content blue">
+                        <div class="glass">
+                            <div class="camera"></div>
+                            <div class="screen">
+                                <span class="blind">CSS로 만든 스마트폰, 앱디자인 '모두앱' 이미지</span>
+                            </div>
+                            <div class="hold"></div>
+                        </div>
                     </div>
                 </div>
-                <ul>
-                    <li class="PARK">PARKHYEONJEONG</li>
-                    <li class="AGE">1996.08.06</li>
-                    <li class="MAIL">DYUNGKR@NAVER.COM</li>
-                    <li class="PUBLISHER">WEB PUBLISHER</li>
-                    <li class="FRONT">FRONT DEVELOPER</li>
-                    <li class="NEWCOMER">NEWCOMER</li>
-                </ul>
+                <div class="app_info">
+                    <h2>APP Design</h2>
+                    <button class="modal_btn">Click Me !</button>
+                </div>
+                <div id="modal">
+                    <div class="modal_content">
+                        <div class="modal_header">
+                            <div class="close_modal">
+                                <p class="blind">모달 창 닫기</p>
+                                <span></span>
+                                <span></span>
+                            </div> 
+                        </div>
+                        <div class="modal_main">
+                            <img src="images/app_design_good_mood.jpg" alt="숙면을 돕는 어플리케이션 디자인, 굿 무드앱디자인">
+                        </div> 
+                    </div>  
+                </div>
             </div>
-        </div>
+            <div id="section5">
+                <div class="contactImg">
+                    <div class="polaroid">
+                        <img src="images/lovely_lena_1.jpg" alt="귀여운 레나(박현정) 폴라로이드">
+                    </div>
+                    <div class="polaroid">
+                        <img src="images/lovely_lena_2.jpg" alt="귀여운 레나(박현정) 폴라로이드">
+                    </div>
+                    <div class="polaroid">
+                        <img src="images/lovely_lena_3.jpg" alt="귀여운 레나(박현정) 폴라로이드">
+                    </div>
+                    <div class="polaroid">
+                        <img src="images/lovely_lena_4.jpg" alt="귀여운 레나(박현정) 폴라로이드">
+                    </div>
+                </div>
+                <div class="contact">
+                    <h2>contact me</h2>
+                    <form action="https://script.google.com/macros/s/AKfycbzM9Jp4VS-2FS9tznvYgKimLqjOAlj-EstJ6MR6qQ/exec" 
+                        method="POST" class="gform" data-email="puiux.kr@gmail.com">
+                        <fieldset>
+                            <legend class="blind">Mail To</legend>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="your name" required />
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="your.name@email.com" required />
+                            <label for="textarea">Inquiry</label> 
+                            <textarea id="textarea" rows="5" placeholder="your message..." name="message"></textarea>
+                            <button>SUBMIT</button>
+                        </fieldset>
+                            <div style="display: none" class="thankyou_message"> 
+                                <p>🤝감사합니다. 곧 다시 연락드리겠습니다.</p>
+                            </div>
+                        <fieldset class="honeypot-field hidden">
+                            <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+                            <input id="honeypot" type="text" name="honeypot" value="" />
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div><!--inner-->
     </main>
-    <footer id="footer"><a href="mailto:dyungkr@naver.com"><span>&copy; 박현정 웹포트폴리오</span> dyungkr@naver.com</a></footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.js" integrity="sha256-wypDCQw+qwWtdARZAAtUMv/1SWOEB1XHZwAFoNc9Wn8=" crossorigin="anonymous"></script>
-    <script>
-        new fullpage('#fullpage',{
-            autoScrolling: true,
-            navigation: true,
-            anchors: ['section1','section2','section3'],
-            navigationTooltips: ['HOME', 'PROJECT', 'PROFILE'],
-            showActiveTooltips: true,
-            scrollingSpeed: 1000,
-            controlArrows: true,
-            slidesNavigation: true,
-            sectionsColor: ['#444', '#222', '#ddd'],
-            css3:true
-        })
-    </script>
-    <script src="js/menu.min.js"></script>
+    <footer></footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script data-cfasync="false" src="js/form-submission-handler.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
